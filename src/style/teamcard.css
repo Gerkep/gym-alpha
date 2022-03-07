@@ -16,11 +16,11 @@
     position: absolute;
     width: 47.5vw;
     height: 65.5vw;
+    margin-top: -0.25vw;
     background-color: aliceblue;
     z-index: -1;
     animation: animate 2s infinite;
     border-radius: 25px;
-    box-shadow: 1px 1px 40px rgba(0, 102, 255, 0.767);
 }
 .card.appear{
     opacity: 1;

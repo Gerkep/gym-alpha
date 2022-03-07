@@ -29,7 +29,7 @@ class Timeline extends React.Component {
             
             let scrolled = (winScroll / height) * 100;
             let ScrollBarWidth;
-            const diff =  winScroll - (contentOffssetTop - 650);
+            const diff =  winScroll - (contentOffssetTop - 250);
             if(diff <= 0){
                ScrollBarWidth=0
             }else{
