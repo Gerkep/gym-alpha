@@ -1,0 +1,44 @@
+.collapsible{
+    width: 80%;
+    margin-top: 12vw;
+
+}
+.collapsible .header{
+    font-size: 3vw;
+    padding: 5vw 0 5vw 5vw;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border: solid rgba(255, 255, 255, 0.705) 0.6vw;
+}
+.faq-header-container{
+    width: 100%;
+    display: flex;
+}
+.collapsible .content{
+    font-size: 3.5vw;
+    padding: 5vw 0 5vw 5vw;
+    border: none;
+    outline: none;
+    border: solid rgba(255, 255, 255, 0.705) 0.6vw;
+}
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 2vw solid transparent;
+    border-right: 2vw solid transparent;
+    border-top: 2vw solid rgba(255, 255, 255, 0.712);
+    margin-right: 5vw;
+    margin-top: 2vw;
+  }
+  .arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 2vw solid transparent;
+    border-right: 2vw solid transparent;
+    margin-right: 5vw;
+    margin-top: 2vw;
+    border-bottom: 2vw solid rgba(255, 255, 255, 0.705);
+  }

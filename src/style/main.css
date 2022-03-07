@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(0, 0, 0);
+    color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.button{
+    padding: 3vw 5vw 3vw 5vw;
+    font-size: 4.5vw;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 0.6vw solid white;
+    color: white;
+    font-weight: 700;
+}
+@keyframes animate{
+    0%{
+      background: linear-gradient(to top,  rgb(0, 150, 255), rgb(0, 0, 255));
+    }
+    8%{
+      background: linear-gradient(to top, rgb(0, 125, 255), rgb(0, 25, 255));
+   }
+   17%{
+      background: linear-gradient(to top, rgb(0, 100, 255), rgb(0, 50, 255));
+   }
+   25%{
+      background: linear-gradient(to top, rgb(0, 75, 255), rgb(0, 75, 255));
+  }
+  33%{
+      background: linear-gradient(to top, rgb(0, 50, 255), rgb(0, 100, 255));
+  }
+  40%{
+      background: linear-gradient(to top, rgb(0, 25, 255), rgb(0, 125, 255));
+  }
+  47%{
+      background: linear-gradient(to top, rgb(0, 0, 255), rgb(0, 150, 255));
+  }
+  55%{
+      background: linear-gradient(to top, rgb(0, 25, 255), rgb(0, 125, 255));
+  }
+  63%{
+      background: linear-gradient(to top, rgb(0, 50, 255), rgb(0, 100, 255));
+  }
+  70%{
+      background: linear-gradient(to top, rgb(0, 75, 255), rgb(0, 75, 255));
+  }
+  78%{
+      background: linear-gradient(to top, rgb(0, 100, 255), rgb(0, 50, 255));
+  }
+  86%{
+      background: linear-gradient(to top, rgb(0, 125, 255), rgb(0, 25, 255));
+  }
+  100%{
+      background: linear-gradient(to top, rgb(0, 150, 255), rgb(0, 0, 255));
+  }
+}
+.page{
+    position: relative;
+}
+.main-header{
+    font-size: 7vw;
+    font-weight: 800;
+    margin: 7vw 0 0 6vw;
+}
+.next-header{
+    margin: 15vw 0 10vw 6vw;
+}
+.main-caption{
+    font-size: 4.5vw;
+    color: rgba(255, 255, 255, 0.705);
+    margin: 7vw 0 0 6vw;
+}
+.join-btn{
+    margin: 10vw 0 0 6vw;
+}
+.main-image{
+    width: 100%;
+    height: 70vw;
+    margin-top: 18vw;
+    background-image: url("../images/jumping-rope.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 30px 50px rgb(0, 0, 0);
+}
+.team-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20vw;
+}
+.faq-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
