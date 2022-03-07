@@ -17,9 +17,17 @@
     width: 47.5vw;
     height: 65.5vw;
     margin-top: -0.25vw;
-    background-color: aliceblue;
     z-index: -1;
     animation: animate 2s infinite;
+    border-radius: 25px;
+}
+.card::after{
+    content: '';
+    position: absolute;
+    width: 47vw;
+    height: 65vw;
+    z-index: -1;
+    background-color: black;
     border-radius: 25px;
 }
 .card.appear{
