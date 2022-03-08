@@ -5,6 +5,8 @@
     gap: 0px 0px; 
     grid-template-areas: 
       "progress-bar timeline-content"; 
+      width: 100vw;
+      overflow: hidden;
   }
   .progress-bar {
     height: 0%;
@@ -22,9 +24,9 @@
   
   /* Container around content */
   .container {
-    margin: 10vw 0 10vw 7vw;
+    margin: 10vw 0 10vw 6vw;
     background-color: inherit;
-    width: 85%;
+    width: 82vw;
     color: black;
     opacity: 0;
     transition: all 1.2s ease;
@@ -44,10 +46,10 @@
     position: absolute;
     top: 22px;
     width: 0;
-    left: -1.5vw;
+    left: -2.8vw;
     z-index: 1;
     border: medium solid rgba(255, 255, 255, 0.678);
-    border-width: 20px 20px 20px 0;
+    border-width: 3vw 3vw 3vw 0;
     border-color: transparent rgba(255, 255, 255, 0.719) transparent transparent;
   }
   
@@ -78,7 +80,7 @@
     color: rgba(255, 255, 255, 0.699);
 }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (min-width: 1200px) {
   /* Place the timelime to the left */
     .timeline::after {
       left: 31px;

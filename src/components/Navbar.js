@@ -29,15 +29,13 @@ class Navbar extends React.Component{
         if(!menuOpen){
             hamburgerBtn.classList.add('open');
             menu.classList.add('open');
-            var x=window.scrollX;
-            var y=window.scrollY;
-            window.onscroll=function(){window.scrollTo(x, y);};
+            document.body.style.overflow = 'hidden';
             appearingLinks();
             menuOpen = true;
         }else{
             hamburgerBtn.classList.remove('open');
             menu.classList.remove('open');
-            window.onscroll=function(){};
+            document.body.style.overflow = 'scroll';
             links.forEach(link => {
                 link.classList.remove('appear');
             })
