@@ -61,10 +61,10 @@ class Navbar extends React.Component{
                     </div>
                 </div>
                 <div className="navbar-links">
-                    <Link to="/store">STORE</Link>
-                    <a href="#">TOKEN</a>
-                    <a href="#">WHITEPAPER</a>
-                    <Link to="/dao">DAO</Link>
+                    <Link className="navbar-desktop-link" to="/store">STORE</Link>
+                    <Link className="navbar-desktop-link" to="/dao">DAO</Link>
+                    <a className="navbar-desktop-link" href="#">TOKEN</a>
+                    <a className="navbar-desktop-link" href="#">WHITEPAPER</a>
                 </div>
             </div>
         )

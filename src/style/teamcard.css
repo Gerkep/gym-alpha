@@ -1,6 +1,6 @@
 .card{
-    width: 47vw;
-    height: 65vw;
+    width: 52vw;
+    height: 70vw;
     display: flex;
     flex-wrap: wrap;
     color: rgb(255, 255, 255);
@@ -14,8 +14,8 @@
 .card::before{
     content: '';
     position: absolute;
-    width: 47.5vw;
-    height: 65.5vw;
+    width: 52.5vw;
+    height: 70.5vw;
     margin-top: -0.25vw;
     z-index: -1;
     animation: animate 2s infinite;
@@ -24,8 +24,8 @@
 .card::after{
     content: '';
     position: absolute;
-    width: 47vw;
-    height: 65vw;
+    width: 52vw;
+    height: 70vw;
     z-index: -1;
     background-color: black;
     border-radius: 25px;
@@ -35,7 +35,7 @@
 }
 
 .profile-picture{
-    margin-top: 5vw;
+    margin-top: 8vw;
     width: 18vw;
     height: 18vw;
     background-size: cover;

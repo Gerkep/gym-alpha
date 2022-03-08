@@ -8,10 +8,11 @@ const MainPage = () => {
     return (
         <div className="page">
             <h1 className="main-header">BUILDING A STRONG BRAND TOGETHER.</h1>
+            <p className="about desktop">2777 NFTs made to empower gym rats and athletes. Become a part of fitness industry revolution and lead a brand of the future.</p>
             <button className="button join-btn">JOIN DISCORD</button>
-            <div className="main-image"></div>
-            <h1 className="main-header next-header">ABOUT</h1>
-            <p className="main-caption">2777 NFTs made for gym rats and athletes. Become a part of fitness industry revolution.</p>
+            <div className="main-image"><div className="image-dim-top"></div><div className="image-dim-left"></div></div>
+            <h1 className="main-header next-header mobile">ABOUT</h1>
+            <p className="about mobile">2777 NFTs made to empower gym rats and athletes. Become a part of fitness industry revolution and lead a brand of the future.</p>
             <h1 className="main-header next-header">ROADMAP</h1>
             <Timeline/>
             <h1 className="main-header">MEET THE TEAM.</h1>

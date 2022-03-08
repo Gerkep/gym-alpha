@@ -115,13 +115,41 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .logo{
-
-    }
     .hamburger{
         display: none;
     }
+    .navbar{
+        height: 10vw;
+        display: grid; 
+        grid-template-columns: 20vw 80vw; 
+        grid-template-rows: 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "logo navbar-links"; 
+    }
+    .logo{
+        grid-area: logo;
+        margin: 3vw 0 0 3vw;
+        height: 6vw;
+        width: 10.5vw;
+        position: absolute;
+        background-image: url("../images/gym-alpha-white.png");
+        background-position: center;
+        background-size: cover;
+    }
     .navbar-links{
-        display: block;
+        direction: ltr;
+        justify-content: flex-end;
+        display: flex;
+        align-items: center;
+        height: 10vw;
+        grid-area: navbar-links;
+    }
+    .navbar-desktop-link{
+        margin: 0 3vw 0 3vw;
+        font-size: 1.2vw;
+    }
+    .menu{
+        display: none;
     }
 }
