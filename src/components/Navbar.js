@@ -12,6 +12,7 @@ class Navbar extends React.Component{
         const hamburgerBtn = document.querySelector('.hamburger-btn');
         const menu = document.querySelector('.menu');
         const links = document.querySelectorAll(".mobile-menu-link");
+        const link = document.querySelector(".mobile-menu-link");
         let menuOpen = false;
         const sleep = (milliseconds) => {
             return new Promise(resolve => setTimeout(resolve, milliseconds))
@@ -41,16 +42,16 @@ class Navbar extends React.Component{
             })
             menuOpen = false;
         }
-        })
-        links.addEventListener('click', () => {
-                hamburgerBtn.classList.remove('open');
-                menu.classList.remove('open');
-                document.body.style.overflow = 'scroll';
-                links.forEach(link => {
-                    link.classList.remove('appear');
-                })
-                menuOpen = false;
-        })
+    })
+    link.addEventListener('click', () => {
+            hamburgerBtn.classList.remove('open');
+            menu.classList.remove('open');
+            document.body.style.overflow = 'scroll';
+            links.forEach(link => {
+                link.classList.remove('appear');
+            })
+            menuOpen = false;
+    })
     }
 
     render(){
@@ -70,8 +71,8 @@ class Navbar extends React.Component{
                     </div>
                 </div>
                 <div className="navbar-links">
+                    <Link className="navbar-desktop-link" to="/store">DAO</Link>
                     <Link className="navbar-desktop-link" to="/store">STORE</Link>
-                    <Link className="navbar-desktop-link" to="/dao">DAO</Link>
                     <a className="navbar-desktop-link" href="#">TOKEN</a>
                     <a className="navbar-desktop-link" href="#">WHITEPAPER</a>
                 </div>
