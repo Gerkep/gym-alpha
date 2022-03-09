@@ -41,7 +41,16 @@ class Navbar extends React.Component{
             })
             menuOpen = false;
         }
-    })
+        })
+        links.addEventListener('click', () => {
+                hamburgerBtn.classList.remove('open');
+                menu.classList.remove('open');
+                document.body.style.overflow = 'scroll';
+                links.forEach(link => {
+                    link.classList.remove('appear');
+                })
+                menuOpen = false;
+        })
     }
 
     render(){
