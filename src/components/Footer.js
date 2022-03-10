@@ -20,7 +20,7 @@ const Footer = () => {
                 <a className="media-icon instagram footer-media-icon" href="#"></a>
             </div>
             <div className="footer-contribution">
-                <p>@2022 Gym Alpha <br/> Designed & Developed by Piotr Gerke</p>
+                <p>@2022 Gym Alpha <br className="mobile"/> Designed & Developed by Piotr Gerke</p>
             </div>
         </div>
     )

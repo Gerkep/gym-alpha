@@ -13,6 +13,7 @@
     background-image: url("../images/gym-alpha-white.png");
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 .hamburger-btn{
     position: relative;
@@ -131,7 +132,7 @@
         grid-area: logo;
         margin: 3vw 0 0 3vw;
         height: 6vw;
-        width: 10.5vw;
+        width: 10.3vw;
         position: absolute;
         background-image: url("../images/gym-alpha-white.png");
         background-position: center;

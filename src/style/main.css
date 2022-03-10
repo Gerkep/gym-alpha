@@ -24,6 +24,7 @@ a{
     color: white;
     font-weight: 700;
 }
+.appearing{opacity: 0; transition: all 1s ease;}
 @keyframes animate{
     0%{
       background: linear-gradient(to top,  rgb(0, 150, 255), rgb(0, 0, 255));
@@ -94,6 +95,17 @@ a{
     background-repeat: no-repeat;
     box-shadow: inset 0 80px 120px rgb(0, 0, 0);
 }
+    .image-dim-top{
+        width: 100%;
+        height: 10vw;
+        background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+    }
+    .image-dim-left{
+        width: 0vw;
+        height: 0vw;
+        margin-top: -20vw;
+        background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+    }
 .team-container{
     width: 100%;
     height: auto;
@@ -108,7 +120,36 @@ a{
     flex-wrap: wrap;
     justify-content: center;
 }
-
+.end-btn-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20vw;
+}
+.end-dc-btn{
+    width: 75vw;
+    height: 60vw;
+    border-radius: 100px;
+    border: none;
+    background: linear-gradient(to left bottom,  rgb(0, 150, 255), rgb(0, 0, 255));
+}
+.end-dc-text{
+    width: 100%;
+    font-size: 8vw;
+    font-weight: 700;
+    color: white;
+}
+.discord-img{
+    background-image: url("../images/discord.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 15vw;
+    margin: 0 auto;
+    margin-top: 5vw;
+}
 @media screen and (min-width: 1200px) {
     .mobile{display: none;}
     .desktop{display: block;}
@@ -141,8 +182,8 @@ a{
     }
     .main-image{
         width: 70%;
-        height: 50vw;
-        margin-top: -25vw;
+        height: 48vw;
+        margin-top: -27vw;
         float: right;
         background-image: url("../images/jumping-rope.jpg");
         background-size: contain;
@@ -151,21 +192,35 @@ a{
         box-shadow: none;
     }
     .image-dim-top{
-        width: 100%;
         height: 15vw;
-        background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
     }
     .image-dim-left{
         width: 15vw;
-        height: 150vw;
-        margin-top: -20vw;
-        background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+        height: 50vw;
     }
     .team-container{
         margin-bottom: 12vw;
     }
     .faq-container{
         margin-top: 5vw;
+    }
+    .end-btn-container{
+        margin-top: 10vw;
+    }
+    .end-dc-btn{
+        width: 65vw;
+        height: 25vw;
+        border-radius: 80px;
+    }
+    .end-dc-text{
+        font-size: 4vw;
+        font-weight: 700;
+        color: white;
+    }
+    .discord-img{
+        width: 12vw;
+        height: 10vw;
+        margin-top: 3vw;
     }
     
 }

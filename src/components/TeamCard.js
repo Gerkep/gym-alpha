@@ -36,7 +36,7 @@ class TeamCard extends React.Component {
     }
     render(){
         return(
-            <div className="card">
+            <div className="card appearing">
                 <div className="profile-picture" style={{backgroundImage: `url(${this.props.profilePicture})`}}></div>
                 <h4 className="name">{this.props.name}</h4>
                 <h2 className="position">{this.props.position}</h2>

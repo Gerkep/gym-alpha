@@ -13,7 +13,6 @@
     width: 100%;
     margin-top: -0.5vw;
     height: 70.5vw;
-    background-color: aliceblue;
     z-index: -1;
     animation: animate 2s infinite;
     border-radius: 25px;
@@ -23,6 +22,9 @@
     height: 25vw;
     display: flex;
     justify-content: center;
+}
+#footer-logo{
+    margin-left: 0;
 }
 .footer-links{
     width: 100%;
@@ -68,4 +70,46 @@
     text-align: center;
     font-size: 3vw;
     color: rgba(252, 252, 252, 0.5);
+}
+
+@media screen and (min-width: 1200px) {
+    .footer{
+        background-color: rgb(0, 0, 0);
+        height: 25vw;
+        margin-top: 10vw;
+    }
+    .footer::before{
+        margin-top: -0.5vw;
+        height: 25.5vw;
+        border-radius: 100px;
+    }
+    .logo-container{
+        height: 9vw;
+    }
+    #footer-logo{
+        margin-left: 0;
+    }
+    .footer-links{
+        height: 3vw;
+        margin-top: 3vw;
+    }
+    .footer-link{
+        font-size: 1.2vw;
+        margin: 0 1.5vw 0 1.5vw;
+    }
+    .footer-link::before {
+        top: 1.5vw;
+      }
+    .footer-media{
+        height: 4vw;
+    }
+    .footer-media-icon{
+        margin: 0 2vw 0 2vw;
+        width: 2.4vw;
+        height: 2.4vw;
+    }
+    .footer-contribution{
+        margin-top: 1vw;
+        font-size: 1vw;
+    }
 }
