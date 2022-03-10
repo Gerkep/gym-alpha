@@ -19,11 +19,18 @@ const MainPage = () => {
             <div className="team-container">
                 <TeamCard profilePicture={founderPic} name="Piotr Gerke" position="The Pioneer" socialMedia={["https://twitter.com/PeterGerke_", "https://www.instagram.com/gerkedev/", "https://www.facebook.com/profile.php?id=100011194814784", "https://www.linkedin.com/in/piotr-gerke-137a05214/"]} />
             </div>
-            <h1 className="main-header">FAQ</h1>
+            <h1 className="main-header">FREQUENTLY ASKED QUESTIONS.</h1>
             <div className="faq-container">
-                <FaqTab header="Wen mint?" content="Mint date is yet to be announced."/>
-                <FaqTab header="What is DAO?" content="DAO stands for Decentralized Autonomous Organisation. It gives community the right to vote and once the majority agrees, execute code that is transparent."/>
+                <FaqTab header="WEN MINT?" content="Mint date is yet to be announced. It will most likely take place in May/June."/>
+                <FaqTab header="WHAT IS MINT?" content="Mint date is yet to be announced. It will most likely take place in May/June."/>
+                <FaqTab header="WHAT IS DAO?" content="DAO stands for Decentralized Autonomous Organisation. It gives community the right to vote and once the majority agrees, execute code that is transparent."/>
+                <FaqTab header="WHAT IS AN NFT?" content="DAO stands for Decentralized Autonomous Organisation. It gives community the right to vote and once the majority agrees, execute code that is transparent."/>
+                <FaqTab header="HOW TO BECOME A MEMBER?" content="DAO stands for Decentralized Autonomous Organisation. It gives community the right to vote and once the majority agrees, execute code that is transparent."/>
+                <FaqTab header="HOW DO I MINT?" content="DAO stands for Decentralized Autonomous Organisation. It gives community the right to vote and once the majority agrees, execute code that is transparent."/>
+                <FaqTab header="WHAT IS THE VISION?" content="DAO stands for Decentralized Autonomous Organisation. It gives community the right to vote and once the majority agrees, execute code that is transparent."/>
+                <FaqTab header="WHAT ARE THE BENEFITS?" content="DAO stands for Decentralized Autonomous Organisation. It gives community the right to vote and once the majority agrees, execute code that is transparent."/>
             </div>
+            <p id="faq-caption">If you have any other questions feel free to contact us on social media!</p>
 
         </div>
     )

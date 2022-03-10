@@ -11,8 +11,7 @@ return (
         </div>
         <div {...getCollapseProps()}>
             <div className="content">
-                Now you can see the hidden content. <br/><br/>
-                Click again to hide...
+                {content}
             </div>
         </div>
     </div>

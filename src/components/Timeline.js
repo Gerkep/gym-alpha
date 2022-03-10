@@ -85,7 +85,7 @@ class Timeline extends React.Component {
                     </ul>
                 </div>
             </div>
-            <div className="timeline-graphics desktop right"><h2 className="timeline-phase">Phase 2</h2><div className="timeline-img" id="foundations-img"></div></div>
+            <div className="timeline-graphics desktop right"><h2 className="timeline-phase">Phase 2</h2><div className="timeline-img" id="launch-img"></div></div>
             <div className="container left">
                 <div className="content">
                     <h1 className="timeline-container-header">NFT Mint & DAO Launch</h1>
@@ -103,7 +103,7 @@ class Timeline extends React.Component {
                     </ul>
                 </div>
             </div>
-            <div className="timeline-graphics desktop left"><h2 className="timeline-phase">Phase 3</h2><div className="timeline-img" id="foundations-img"></div></div>
+            <div className="timeline-graphics desktop left"><h2 className="timeline-phase">Phase 3</h2><div className="timeline-img" id="store-img"></div></div>
             <div className="container right">
                 <div className="content">
                     <h1 className="timeline-container-header">Merchandise & Awareness</h1>
@@ -123,7 +123,7 @@ class Timeline extends React.Component {
                     </p>
                 </div>
             </div>
-            <div className="timeline-graphics desktop right"><h2 className="timeline-phase">Phase 4</h2><div className="timeline-img" id="foundations-img"></div></div>
+            <div className="timeline-graphics desktop right"><h2 className="timeline-phase">Phase 4</h2><div className="timeline-img" id="gym-img"></div></div>
             <div className="container left">
                 <div className="content">
                     <h1 className="timeline-container-header">First GYM</h1>
@@ -146,16 +146,23 @@ class Timeline extends React.Component {
                     </p>
                 </div>
             </div>
-            <div className="timeline-graphics desktop left"><h2 className="timeline-phase">Phase 5</h2><div className="timeline-img" id="foundations-img"></div></div>
+            <div className="timeline-graphics desktop left"><h2 className="timeline-phase">Phase 5</h2><div className="timeline-img" id="expansion-img"></div></div>
             <div className="container right">
-                <div className="content">
+                <div className="content" id="last-container">
                     <h1 className="timeline-container-header">5. Further Expansion</h1>
-                    <p className="timeline-container-date">Hopefully Q1 2023</p>
+                    <p className="timeline-container-date">2023-Forever</p>
                     <p className="timeline-container-content">
-                        With our first gym, online store and a great community we will start organising our own big events, continue 
-                        building worldwide gym chain, collaborating with 
-                        well-known athletes and expanding our merchandise offer to make us the 
-                        biggest player in fitness industry!
+                        With our first gym, online store and a great community we will:<br/><br/>
+
+                        <ul className="timeline-container-content">
+                        <li>- Start organising our own BIG events</li>
+                        <li>- Continue building worldwide gym chain</li>
+                        <li>- Collaborate with well-known athletes and youtubers</li>
+                        <li>- Expand our merchandise offer</li>
+                        <li>- Organise casual trainings with founders all around the world</li>
+                        <li>- Continue biulding amazing community</li>
+                        <li>- Partner with well-known brands(Gymshark, Adidas, Nike...)</li>
+                    </ul><br/>
                     </p><br/>
                 </div>
             </div>

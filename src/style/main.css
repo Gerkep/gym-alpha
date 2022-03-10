@@ -78,7 +78,6 @@ a{
 }
 .about{
     font-size: 4.5vw;
-    color: rgba(255, 255, 255, 0.705);
     margin: 7vw 0 0 6vw;
     max-width: 80vw;
 }
@@ -163,18 +162,10 @@ a{
         background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
     }
     .team-container{
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-bottom: 5vw;
+        margin-bottom: 12vw;
     }
     .faq-container{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        margin-top: 5vw;
     }
     
 }
