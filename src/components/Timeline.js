@@ -6,8 +6,9 @@ class Timeline extends React.Component {
 
     componentDidMount(){
         const containers = document.querySelectorAll('.container');
+        const graphics = document.querySelectorAll('.timeline-graphics');
 
-        //appering animation
+        //appering animation containers
         function handleIntersection(entries) {
             entries.map((entry) => {
               if (entry.isIntersecting) {
@@ -19,8 +20,20 @@ class Timeline extends React.Component {
         const observer = new IntersectionObserver(handleIntersection);
         containers.forEach(container => observer.observe(container));
 
+                //appering animation graphics
+                function handleGraphicsIntersection(entries) {
+                    entries.map((entry) => {
+                      if (entry.isIntersecting) {
+                            entry.target.classList.add("appear")
+                        observer.unobserve(entry.target);
+                      }
+                    });
+                  }
+                const graphicObserver = new IntersectionObserver(handleGraphicsIntersection);
+                graphics.forEach(graphic => graphicObserver.observe(graphic));
+
         //scrolling bar
-        function myFunction() {
+        function progressBar() {
             let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
             let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
            
@@ -43,19 +56,21 @@ class Timeline extends React.Component {
                     ScrollBarWidth=98
                }
             }
-            document.getElementById("myBar").style.height = ScrollBarWidth +  "%";
+            document.querySelector(".progress-bar").style.height = ScrollBarWidth +  "%";
           }
-        window.onscroll = function() {myFunction()};
+        window.onscroll = function() {progressBar()};
     }
     
     render(){
     return(
+        <div>
         <div className="timeline">
             <div className="progress-bar" id="myBar"></div>
             <div className="timeline-content">
-            <div className="container" id="first-container">
+            <div className="timeline-graphics desktop left"><h2 className="timeline-phase">Phase 1</h2><div className="timeline-img" id="foundations-img"></div></div>
+            <div className="container right" id="first-container">
                 <div className="content">
-                    <h1 className="timeline-container-header">1. Building Foundations</h1>
+                    <h1 className="timeline-container-header">Building Foundations</h1>
                     <p className="timeline-container-date">Now-Forever</p>
                     <p className="timeline-container-content">
                         In this phase we will be focused on providing the best, quality content 
@@ -70,10 +85,11 @@ class Timeline extends React.Component {
                     </ul>
                 </div>
             </div>
-            <div className="container">
+            <div className="timeline-graphics desktop right"><h2 className="timeline-phase">Phase 2</h2><div className="timeline-img" id="foundations-img"></div></div>
+            <div className="container left">
                 <div className="content">
-                    <h1 className="timeline-container-header">2. NFT Mint & DAO Launch</h1>
-                    <p className="timeline-container-date">May 2022</p>
+                    <h1 className="timeline-container-header">NFT Mint & DAO Launch</h1>
+                    <p className="timeline-container-date">May/June 2022</p>
                     <p className="timeline-container-content">
                         Once we have fundamentals we can really start building! 
                         In this phase you will be able to acquire an NFT, become a member 
@@ -87,9 +103,10 @@ class Timeline extends React.Component {
                     </ul>
                 </div>
             </div>
-            <div className="container">
+            <div className="timeline-graphics desktop left"><h2 className="timeline-phase">Phase 3</h2><div className="timeline-img" id="foundations-img"></div></div>
+            <div className="container right">
                 <div className="content">
-                    <h1 className="timeline-container-header">3. Merchandise & Awareness</h1>
+                    <h1 className="timeline-container-header">Merchandise & Awareness</h1>
                     <p className="timeline-container-date">Depends on community</p>
                     <p className="timeline-container-content">
                         This is when it all becomes a reality.
@@ -106,9 +123,10 @@ class Timeline extends React.Component {
                     </p>
                 </div>
             </div>
-            <div className="container">
+            <div className="timeline-graphics desktop right"><h2 className="timeline-phase">Phase 4</h2><div className="timeline-img" id="foundations-img"></div></div>
+            <div className="container left">
                 <div className="content">
-                    <h1 className="timeline-container-header">4. First GYM</h1>
+                    <h1 className="timeline-container-header">First GYM</h1>
                     <p className="timeline-container-date">Hopefully Q1 2023</p>
                     <p className="timeline-container-content">
                         With money from merchandise and NFT mint we will be able to start building 
@@ -128,7 +146,8 @@ class Timeline extends React.Component {
                     </p>
                 </div>
             </div>
-            <div className="container">
+            <div className="timeline-graphics desktop left"><h2 className="timeline-phase">Phase 5</h2><div className="timeline-img" id="foundations-img"></div></div>
+            <div className="container right">
                 <div className="content">
                     <h1 className="timeline-container-header">5. Further Expansion</h1>
                     <p className="timeline-container-date">Hopefully Q1 2023</p>
@@ -141,6 +160,7 @@ class Timeline extends React.Component {
                 </div>
             </div>
             </div>
+        </div>
         </div>
     )
     }

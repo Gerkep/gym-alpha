@@ -88,3 +88,44 @@
 .facebook{
     background-image: url("../images/facebook-logo-white.png");
 }
+
+@media screen and (min-width: 1200px) {
+    .card{
+        width: 20vw;
+        height: 30vw;
+        margin: 10vw 12vw 0vw 12vw;
+    }
+    .card::before{
+        content: '';
+        position: absolute;
+        width: 20.5vw;
+        height: 30.5vw;
+    }
+    .card::after{
+        width: 20vw;
+        height: 30vw;
+    }
+    .profile-picture{
+        margin-top: 4vw;
+        width: 7vw;
+        height: 7vw;
+    }
+    .name{
+        font-size: 1.3vw;
+        font-weight:400;
+        color: rgba(255, 255, 255, 0.5);
+        margin-top: -1.5vw;
+    }
+    .position{
+        font-size: 2vw;
+        margin-top: -2.5vw;
+    }
+    .social-media{
+        margin-top: -3vw;
+    }
+    .media-icon{
+        width: 3vw;
+        height: 3vw;
+        margin: 0 0.7vw 0 0.7vw;
+    }
+}
