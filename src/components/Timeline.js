@@ -151,7 +151,7 @@ class Timeline extends React.Component {
                 <div className="content" id="last-container">
                     <h1 className="timeline-container-header">5. Further Expansion</h1>
                     <p className="timeline-container-date">2023-Forever</p>
-                    <p className="timeline-container-content">
+                    <div className="timeline-container-content">
                         With our first gym, online store and a great community we will:<br/><br/>
 
                         <ul className="timeline-container-content">
@@ -163,7 +163,7 @@ class Timeline extends React.Component {
                         <li>- Continue biulding amazing community</li>
                         <li>- Partner with well-known brands(Gymshark, Adidas, Nike...)</li>
                     </ul><br/>
-                    </p><br/>
+                    </div><br/>
                 </div>
             </div>
             </div>

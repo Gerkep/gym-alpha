@@ -12,9 +12,6 @@ a{
     color: white;
     text-decoration: none;
 }
-.loader{
-    font-size: 10vw;
-}
 .desktop{
     display: none;
 }
@@ -27,7 +24,7 @@ a{
     color: white;
     font-weight: 700;
 }
-.appearing{opacity: 0; transition: all 1s ease;}
+.appearing{opacity: 0; transition: all 1.2s ease;}
 @keyframes animate{
     0%{
       background: linear-gradient(to top,  rgb(0, 150, 255), rgb(0, 0, 255));
