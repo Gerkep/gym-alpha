@@ -65,7 +65,7 @@ class Navbar extends React.Component{
                 <div className="menu">
                     <div className="mobile-menu-items">
                             <Link className="mobile-menu-link" to="/dao">Dao</Link>
-                            <Link className="footer-link" to="/token">TOKEN</Link>
+                            <Link className="mobile-menu-link" to="/token">TOKEN</Link>
                             <Link className="mobile-menu-link" id="link" to="/store">Store</Link>
                             <a className="mobile-menu-link" href="https://www.notion.so/GYM-ALPHA-4c1e7ba461f64ef79144d8343807128e">White paper</a>
                     </div>

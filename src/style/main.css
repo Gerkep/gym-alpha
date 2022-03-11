@@ -130,7 +130,7 @@ a{
 .end-dc-btn{
     width: 75vw;
     height: 60vw;
-    border-radius: 100px;
+    border-radius: 30px;
     border: none;
     background: linear-gradient(to left bottom,  rgb(0, 150, 255), rgb(0, 0, 255));
 }
