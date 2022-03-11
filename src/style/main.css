@@ -12,6 +12,9 @@ a{
     color: white;
     text-decoration: none;
 }
+.loader{
+    font-size: 10vw;
+}
 .desktop{
     display: none;
 }

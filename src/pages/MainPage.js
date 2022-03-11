@@ -8,6 +8,8 @@ import "../style/main.css";
 class MainPage extends React.Component {
 
     componentDidMount(){
+        let loader = document.querySelector(".loader");
+        loader.style.display = "none";
         //faq-show-&-hide-bbuttons
         let showMoreBtn = document.getElementById("faq-more-btn");
         let showLessBtn = document.getElementById("faq-less-btn");

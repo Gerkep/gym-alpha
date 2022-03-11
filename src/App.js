@@ -1,25 +1,31 @@
 import React from "react";
-import { BrowserRouter, Route } from 'react-router-dom';
+import { Router, Route, Switch, Redirect } from 'react-router-dom';
 import DaoPage from "./pages/DaoPage";
 import MainPage from "./pages/MainPage";
 import StorePage from "./pages/StorePage";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import TokenPage from "./pages/TokenPage";
+import ErrorPage from "./pages/ErrorPage";
+import history from "./history";
+
 import "../src/style/main.css"
 
  const App = () => {
     return(
-        <div>
-            <BrowserRouter>
-                <Route path="/" component={Navbar}/>
-                <Route path="/" exact component={MainPage}/>
-                <Route path="/dao" exact component={DaoPage}/>
-                <Route path="/store" exact component={StorePage}/>
-                <Route path="/" component={Footer}/>
-            </BrowserRouter>
-        </div>
-
-
+            <Router history={history}>
+                <div>
+                    <Navbar/>
+                    <Switch>
+                        <Route exact path="/" component={MainPage}/>
+                        <Route exact path="/dao" component={DaoPage}/>
+                        <Route exact path="/store" component={StorePage}/>
+                        <Route exact path="/token" component={TokenPage}/>
+                        <Route path="*" component={ErrorPage} />
+                    </Switch>
+                    <Footer />
+                </div>
+            </Router>
     )
 }
 

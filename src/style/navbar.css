@@ -119,6 +119,12 @@
     .hamburger{
         display: none;
     }
+    .menu{
+        display: none;
+    }
+    .hamburger-btn{
+        display: none;
+    }
     .navbar{
         height: 10vw;
         display: grid; 
@@ -149,8 +155,5 @@
     .navbar-desktop-link{
         margin: 0 3vw 0 3vw;
         font-size: 1.2vw;
-    }
-    .menu{
-        display: none;
     }
 }

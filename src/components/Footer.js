@@ -10,8 +10,8 @@ const Footer = () => {
             </div>
             <div className="footer-links">
                     <Link className="footer-link" to="/store">STORE</Link>
-                    <a className="footer-link" href="#">TOKEN</a>
-                    <a className="footer-link" href="#">WHITEPAPER</a>
+                    <Link className="footer-link" to="/token">TOKEN</Link>
+                    <a className="footer-link" href="https://www.notion.so/GYM-ALPHA-4c1e7ba461f64ef79144d8343807128e">WHITE PAPER</a>
                     <Link className="footer-link" to="/dao">DAO</Link>
             </div>
             <div className="footer-media">
