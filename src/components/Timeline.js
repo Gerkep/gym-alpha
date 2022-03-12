@@ -74,14 +74,14 @@ class Timeline extends React.Component {
                     <p className="timeline-container-date">Now-Forever</p>
                     <p className="timeline-container-content">
                         In this phase we will be focused on providing the best, quality content 
-                        and building lasting relationships within our community. In this phase 
+                        and building lasting relationships with our community. <br />In this phase 
                         we are planning to:
                     </p><br/>
                     <ul className="timeline-container-content">
-                        <li>- start our Discord(channels for your PR’s, chanel with personal  trainer and much more)</li>
-                        <li>- create a website</li>
-                        <li>- assemble a great marketing team</li>
-                        <li>- bring popular athletes on board</li>
+                        <li>- Start our Discord(channel for your PR’s, personal trainer, workout music and much more!)</li>
+                        <li>- Create a website✅</li>
+                        <li>- Assemble a great social media/marketing team</li>
+                        <li>- Bring popular athletes on board</li>
                     </ul>
                 </div>
             </div>
@@ -98,7 +98,7 @@ class Timeline extends React.Component {
                     <ul className="timeline-container-content">
                         <li>- NFT project mint</li>
                         <li>- $WHEY token launch</li>
-                        <li>- assemble a great marketing team</li>
+                        <li>- Launch main DAO</li>
                         <li>- First DAO votings</li>
                     </ul>
                 </div>
@@ -112,14 +112,15 @@ class Timeline extends React.Component {
                         This is when it all becomes a reality.
                     </p><br/>
                     <ul className="timeline-container-content">
-                        <li>- Voting regarding merchandise(manufacturer, type of products etc.)</li>
-                        <li>- Creation of chosen products(some of them sent to community)</li>
-                        <li>- Online store launch</li>
+                        <li>- Mint and launch of Merchandise DAO</li>
+                        <li>- Votinings regarding merchandise(manufacturer, type of products etc.)</li>
+                        <li>- Create chosen products(some of them sent to community)</li>
+                        <li>- Launch online store</li>
                         <li>- Our stand at chosen big fitness events</li>
-                        <li>- Collaborations with athletes</li>
+                        <li>- Collaborate with top tier athletes</li>
                     </ul><br/>
                     <p className="timeline-container-caption">
-                        This phase is going to begin within couple of days after mint and launch of a DAO. (to let paperhands sell and keep only real gym addicts on board)
+                        This phase is gonna begin within couple of days after mint and launch of a DAO. (to let paperhands sell and keep only real gym addicts on board)
                     </p>
                 </div>
             </div>
@@ -130,14 +131,13 @@ class Timeline extends React.Component {
                     <p className="timeline-container-date">Hopefully Q1 2023</p>
                     <p className="timeline-container-content">
                         With money from merchandise and NFT mint we will be able to start building 
-                        our first gym led by community!
+                        our first gym governed by community!
                     </p><br/>
                     <ul className="timeline-container-content">
-                        <li>- Voting regarding: place, cost, final look/style, contractor etc.</li>
-                        <li>- Deal with paperwork</li>
-                        <li>- Land purchase</li>
-                        <li>- Beginning of construction process(this process will require lot’s of voting)</li>
-                        <li>- Buy equipment and hire staff(Or make it mostly autonomous?  It all depends on your votes and budget)</li>
+                        <li>- Votings regarding: place, cost, style, contractor etc.</li>
+                        <li>- Purchase land</li>
+                        <li>- Begin construction process</li>
+                        <li>- Buy equipment and hire staff(Or make it mostly autonomous?  It all depends on your votes!)</li>
                         <li>- Organise marketing campaign for our new gym</li>
                         <li>- Welcome our first gym members!</li>
                     </ul><br/>
@@ -156,10 +156,10 @@ class Timeline extends React.Component {
 
                         <ul className="timeline-container-content">
                         <li>- Start organising our own BIG events</li>
-                        <li>- Continue building worldwide gym chain</li>
+                        <li>- Continue building our worldwide gym chain</li>
                         <li>- Collaborate with well-known athletes and youtubers</li>
                         <li>- Expand our merchandise offer</li>
-                        <li>- Organise casual trainings with founders all around the world</li>
+                        <li>- Organise spontaneous trainings with founders all around the world</li>
                         <li>- Continue biulding amazing community</li>
                         <li>- Partner with well-known brands(Gymshark, Adidas, Nike...)</li>
                     </ul><br/>

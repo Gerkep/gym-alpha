@@ -67,14 +67,14 @@ class Navbar extends React.Component{
                             <Link className="mobile-menu-link" to="/dao">Dao</Link>
                             <Link className="mobile-menu-link" to="/token">TOKEN</Link>
                             <Link className="mobile-menu-link" id="link" to="/store">Store</Link>
-                            <a className="mobile-menu-link" href="https://www.notion.so/GYM-ALPHA-4c1e7ba461f64ef79144d8343807128e">White paper</a>
+                            <a className="mobile-menu-link" href="https://dune-globe-9dc.notion.site/GYM-ALPHA-4c1e7ba461f64ef79144d8343807128e">White paper</a>
                     </div>
                 </div>
                 <div className="navbar-links">
                     <Link className="navbar-desktop-link" to="/dao">DAO</Link>
                     <Link className="navbar-desktop-link" to="/store">STORE</Link>
                     <Link className="navbar-desktop-link" to="/token">TOKEN</Link>
-                    <a className="navbar-desktop-link" href="https://www.notion.so/GYM-ALPHA-4c1e7ba461f64ef79144d8343807128e">WHITE PAPER</a>
+                    <a className="navbar-desktop-link" href="https://dune-globe-9dc.notion.site/GYM-ALPHA-4c1e7ba461f64ef79144d8343807128e">WHITE PAPER</a>
                 </div>
             </div>
         )

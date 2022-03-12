@@ -46,12 +46,12 @@ class MainPage extends React.Component {
         return (
             <div className="page">
                 <h1 className="main-header appearing">BUILDING A STRONG BRAND TOGETHER.</h1>
-                <p className="about desktop appearing">2777 NFTS MADE TO EMPOWER GYM RATS AND ATHLETES. BECOME A PART OF FITNESS INDUSTRY REVOLUTION AND LEAD A BRAND OF THE FUTURE.</p>
+                <p className="about desktop appearing">2777 NFTS MADE TO EMPOWER GYM RATS AND ATHLETES.<br/> JOIN THE FITNESS INDUSTRY REVOLUTION AND BECOME<br/> A BOARD MEMBER OF GYM ALPHA BRAND.</p>
                 <button className="button join-btn appearing">JOIN DISCORD</button>
                 <div className="main-image"><div className="image-dim-top"></div><div className="image-dim-left"></div></div>
                 <h1 className="main-header next-header mobile">ABOUT</h1>
-                <p className="about mobile">2777 NFTs made to empower gym rats and athletes. Become a part of fitness industry revolution and lead a brand of the future.</p>
-                <h1 className="main-header next-header appearing" id="roadmap-header">ROADMAP</h1>
+                <p className="about mobile">2777 NFTs made to empower gym rats and athletes. Join the fitness industry revolution and become a board member of the brand of the future.</p>
+                <h1 className="main-header next-header appearing" id="roadmap-header">PLAN OF ACTION.</h1>
                 <Timeline/>
                 <h1 className="main-header appearing">MEET THE TEAM.</h1>
                 <div className="team-container">
@@ -59,16 +59,16 @@ class MainPage extends React.Component {
                 </div>
                 <h1 className="main-header appearing">FREQUENTLY ASKED QUESTIONS.</h1>
                 <div className="faq-container">
-                    <FaqTab header="WEN MINT?" content="Mint date is yet to be announced. It will most likely take place in May/June."/>
-                    <FaqTab header="WHAT IS MINT?" content="Mint date is yet to be announced. It will most likely take place in May/June."/>
-                    <FaqTab header="WHAT IS DAO?" content="DAO stands for Decentralized Autonomous Organisation. It gives community the right to vote and once the majority agrees, execute code that is transparent."/>
+                    <FaqTab header="WHAT IS AN NFT?" content="NFT stands for non-fungible token or asset that cannot be replaced with another identical one of the same value. Just think about it as virtual goods, which you can actually own and store in your wallet. It can be a piece of art, ticket, video, music, almost everything what's digital."/>
+                    <FaqTab header="WHAT IS MINT?" content="Mint is an event where you will be able to buy your NFT. It will most likely take place on our website. PS. To mint you need to have a wallet with ETH in it."/>
+                    <FaqTab header="WHAT IS DAO?" content="DAO stands for Decentralized Autonomous Organisation. It gives the community ability to vote and cooporate online without any middleman or risks of being scammed. That's because it's just a transparent code everyone can see and review. In DAO there is usually a voting system. Once something is voted out(for example 50% vote for 'yes'), then the predetermined code is executed. That's basically how it works. All of this usually takes place in your browser, using your cryptocurrency wallet."/>
                     <div className="faq-show-more"><button className="arrow-down arrow-expand" id="faq-more-btn"></button></div>
                     <div className="faq-more">
-                        <FaqTab header="WHAT IS AN NFT?" content="DAO stands for Decentralized Autonomous Organisation. It gives community the right to vote and once the majority agrees, execute code that is transparent."/>
-                        <FaqTab header="HOW TO BECOME A MEMBER?" content="DAO stands for Decentralized Autonomous Organisation. It gives community the right to vote and once the majority agrees, execute code that is transparent."/>
-                        <FaqTab header="HOW DO I MINT?" content="DAO stands for Decentralized Autonomous Organisation. It gives community the right to vote and once the majority agrees, execute code that is transparent."/>
-                        <FaqTab header="WHAT IS THE VISION?" content="DAO stands for Decentralized Autonomous Organisation. It gives community the right to vote and once the majority agrees, execute code that is transparent."/>
-                        <FaqTab header="WHAT ARE THE BENEFITS?" content="DAO stands for Decentralized Autonomous Organisation. It gives community the right to vote and once the majority agrees, execute code that is transparent."/>
+                        <FaqTab header="WEN MINT?" content="Mint date is yet to be announced. It will most likely take place in May/June."/>
+                        <FaqTab header="HOW TO BECOME A MEMBER?" content="To become GYM ALPHA board member you need to own our NFT(you will be able to mint it or buy on secondary market- Opensea) and stake it on our website. It will be possible shortly afer mint."/>
+                        <FaqTab header="HOW DO I MINT?" content="To mint an NFT your wallet address have to be on our whitelist(list of wallets that can mint). Once your wallet is on our list, you will have to visit our website at the right time(we will announce it a few days before the mint), click the mint button and approve transaction! If you are new to the NFT space here is what you should do: setup your wallet(type in browser: How to setup metamask?), buy ETH(it can be done on every major cryptocurrency exchange for example Coinbase or Binance), transfer crypto to your wallet(type in your browser something like: How to transfer ETH from Coinbase to Metamask). That's it! Now the only thing you have to do is to get on our whitelist and buy when the time comes!"/>
+                        <FaqTab header="WHAT IS THE VISION?" content="Community-driven brand that will empower individuals, who love strength training, and revolutionise the fitness industry. You will be able to directly influence the future of our brand by becoming a member of a new business model called DAO. You will be able to take part in designing process our own merchandise, organising events and building a worldwide gym chain. We firmly believe that this approach will introduce numerous innovations, that the community actually needs into the fitness industry, thus giving us an advantage over other brands."/>
+                        <FaqTab header="WHAT ARE THE BENEFITS?" content="Every holder of our NFT will have access to the website(maybe in the future mobile app), where he/she will be able to vote and propose new ideas for Gym Alpha brand. As a board member you will also benefit financially. Every month our holders will receive some percentage of our brands profit(specific number will be announced before NFT minting process) and tokens for staking(you will be able to use it to vote or sell it on exchange). Depending on the rarity of the NFT and the instance of the DAO, members will receive various benefits and discounts. We will be offering: free entrance to any of our gyms in the world, merchandise gifts, free VIP tickets for our events and discounts for our products"/>
                         <div className="faq-show-less"><button className="arrow-up arrow-shrink" id="faq-less-btn"></button></div>
                     </div>
                 </div>
