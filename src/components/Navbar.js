@@ -64,10 +64,10 @@ class Navbar extends React.Component{
                 </div>
                 <div className="menu">
                     <div className="mobile-menu-items">
-                            <Link className="mobile-menu-link" to="/dao">Dao</Link>
+                            <Link className="mobile-menu-link" to="/dao">DAO</Link>
                             <Link className="mobile-menu-link" to="/token">TOKEN</Link>
-                            <Link className="mobile-menu-link" id="link" to="/store">Store</Link>
-                            <a className="mobile-menu-link" href="https://dune-globe-9dc.notion.site/GYM-ALPHA-4c1e7ba461f64ef79144d8343807128e">White paper</a>
+                            <Link className="mobile-menu-link" id="link" to="/store">STORE</Link>
+                            <a className="mobile-menu-link" href="https://dune-globe-9dc.notion.site/GYM-ALPHA-4c1e7ba461f64ef79144d8343807128e">WHITE PAPER</a>
                     </div>
                 </div>
                 <div className="navbar-links">
