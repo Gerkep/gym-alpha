@@ -1,8 +1,15 @@
 import React from "react";
 import FaqTab from "../components/FaqTab";
+import HolderBenefit from "../components/HolderBenefit";
 import TeamCard from "../components/TeamCard";
 import Timeline from "../components/Timeline";
 import founderPic from "../images/founder.jpeg";
+import dollarPic from "../images/money-bag-dynamic-premium.png";
+import giftPic from "../images/gift-dynamic-premium.png";
+import gymPic from "../images/gym-dynamic-premium.png";
+import walletPic from "../images/wallet-dynamic-premium.png";
+import ticketPic from "../images/file-fav-dynamic-premium.png";
+import phonePic from "../images/chat-dynamic-premium.png";
 import "../style/main.css";
 
 class MainPage extends React.Component {
@@ -46,11 +53,20 @@ class MainPage extends React.Component {
         return (
             <div className="page">
                 <h1 className="main-header appearing">BUILDING A STRONG BRAND TOGETHER.</h1>
-                <p className="about desktop appearing">2777 NFTS MADE TO EMPOWER GYM RATS AND ATHLETES.<br/> JOIN THE FITNESS INDUSTRY REVOLUTION AND BECOME<br/> A BOARD MEMBER OF GYM ALPHA BRAND.</p>
+                <p className="about desktop appearing">2777 NFTS MADE TO EMPOWER GYM RATS AND ATHLETES.<br/> GYM ALPHA IS MUCH MORE THAN A BRAND, IT IS A GYM<br/> AND BUSINESS ORIENTED COMMUNITY.</p>
                 <button className="button join-btn appearing">JOIN DISCORD</button>
                 <div className="main-image"><div className="image-dim-top"></div><div className="image-dim-left"></div></div>
                 <h1 className="main-header next-header mobile">ABOUT</h1>
-                <p className="about mobile">2777 NFTs made to empower gym rats and athletes. Join the fitness industry revolution and become a board member of the brand of the future.</p>
+                <p className="about mobile">2777 NFTs made to empower gym rats and athletes. Gym Alpha is much more than a brand, it's a gym and business oriented community.</p>
+                <h1 className="main-header appearing" id="membership-header">MEMBERSHIP BENEFITS.</h1>
+                <div className="benefits-container">
+                    <HolderBenefit image={dollarPic} header="Financial" text="Holders of our DAO will recieve dividend from our brand's profit every 3 months."/>
+                    <HolderBenefit image={giftPic} header="Gifts" text="Holders of our DAO will recieve dividend from our brand's profit every 3 months."/>
+                    <HolderBenefit image={gymPic} header="Gym For Free" text="Holders of our DAO will recieve dividend from our brand's profit every 3 months."/>
+                    <HolderBenefit image={walletPic} header="Discounts" text="Holders of our DAO will recieve dividend from our brand's profit every 3 months."/>
+                    <HolderBenefit image={ticketPic} header="VIP Tickets" text="Holders of our DAO will recieve dividend from our brand's profit every 3 months."/>
+                    <HolderBenefit image={phonePic} header="Connections" text="Holders of our DAO will recieve dividend from our brand's profit every 3 months."/>
+                </div>
                 <h1 className="main-header next-header appearing" id="roadmap-header">PLAN OF ACTION.</h1>
                 <Timeline/>
                 <h1 className="main-header appearing">MEET THE TEAM.</h1>
