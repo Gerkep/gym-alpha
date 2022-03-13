@@ -13,7 +13,8 @@
     background-size: contain;
     background-repeat: no-repeat;
     height: 30vw;
-    width: 100%;
+    width: 30vw;
+    margin: 0 30vw 10vw 30vw;
     border-radius: 20px;
   }
   .benefit-header { font-size: 8vw; text-align: center; margin-top: 3vw;}

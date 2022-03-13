@@ -4,12 +4,12 @@ import HolderBenefit from "../components/HolderBenefit";
 import TeamCard from "../components/TeamCard";
 import Timeline from "../components/Timeline";
 import founderPic from "../images/founder.jpeg";
-import dollarPic from "../images/money-bag-dynamic-premium.png";
-import giftPic from "../images/gift-dynamic-premium.png";
-import gymPic from "../images/gym-dynamic-premium.png";
-import walletPic from "../images/wallet-dynamic-premium.png";
-import ticketPic from "../images/file-fav-dynamic-premium.png";
-import phonePic from "../images/chat-dynamic-premium.png";
+import dollarPic from "../images/money.png";
+import giftPic from "../images/gift.png";
+import gymPic from "../images/gym-dumbell.png";
+import walletPic from "../images/wallet.png";
+import ticketPic from "../images/vip.png";
+import phonePic from "../images/people.png";
 import "../style/main.css";
 
 class MainPage extends React.Component {
@@ -58,7 +58,7 @@ class MainPage extends React.Component {
                 <div className="main-image"><div className="image-dim-top"></div><div className="image-dim-left"></div></div>
                 <h1 className="main-header next-header mobile">ABOUT</h1>
                 <p className="about mobile">2777 NFTs made to empower gym rats and athletes. Gym Alpha is much more than a brand, it's a gym and business oriented community.</p>
-                <h1 className="main-header appearing" id="membership-header">MEMBERSHIP BENEFITS.</h1>
+                <h1 className="main-header next-header appearing" id="membership-header">MEMBERSHIP BENEFITS.</h1>
                 <div className="benefits-container">
                     <HolderBenefit image={dollarPic} header="Financial" text="Holders of our DAO will recieve dividend from our brand's profit every 3 months."/>
                     <HolderBenefit image={giftPic} header="Gifts" text="Holders of our DAO will recieve dividend from our brand's profit every 3 months."/>
@@ -67,13 +67,13 @@ class MainPage extends React.Component {
                     <HolderBenefit image={ticketPic} header="VIP Tickets" text="Holders of our DAO will recieve dividend from our brand's profit every 3 months."/>
                     <HolderBenefit image={phonePic} header="Connections" text="Holders of our DAO will recieve dividend from our brand's profit every 3 months."/>
                 </div>
-                <h1 className="main-header next-header appearing" id="roadmap-header">PLAN OF ACTION.</h1>
+                <h1 className="main-header next-header appearing" id="roadmap-header">ROADMAP.</h1>
                 <Timeline/>
-                <h1 className="main-header appearing">MEET THE TEAM.</h1>
+                <h1 className="main-header next-header appearing">MEET THE TEAM.</h1>
                 <div className="team-container">
                     <TeamCard profilePicture={founderPic} name="Piotr Gerke" position="The Pioneer" socialMedia={["https://twitter.com/PeterGerke_", "https://www.instagram.com/gerkedev/", "https://www.facebook.com/profile.php?id=100011194814784", "https://www.linkedin.com/in/piotr-gerke-137a05214/"]} />
                 </div>
-                <h1 className="main-header appearing">FREQUENTLY ASKED QUESTIONS.</h1>
+                <h1 className="main-header next-header appearing">FAQ</h1>
                 <div className="faq-container">
                     <FaqTab header="WHAT IS AN NFT?" content="NFT stands for non-fungible token or asset that cannot be replaced with another identical one of the same value. Just think about it as virtual goods, which you can actually own and store in your wallet. It can be a piece of art, ticket, video, music, almost everything what's digital."/>
                     <FaqTab header="WHAT IS MINT?" content="Mint is an event where you will be able to buy your NFT. It will most likely take place on our website. PS. To mint you need to have a wallet with ETH in it."/>
