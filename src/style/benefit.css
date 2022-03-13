@@ -28,13 +28,15 @@
       margin: 0;
     }
     .benefit-illustration{
-      height: 12vw;
+      height: 8vw;
+      width: 8vw;
+      margin: 0 30% 0 30%;
     }
     .benefit-header{
-      font-size: 2.5vw;
+      font-size: 2vw;
     }
     .benefit-text{
       font-size: 1.2vw;
-      margin-top: 2vw;
+      margin-top: 1vw;
     }
   }

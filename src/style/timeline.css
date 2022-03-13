@@ -146,7 +146,7 @@
     }
   
     .timeline-container-header{
-        font-size: 3vw;
+        font-size: 2vw;
     }
     .timeline-container-date{
       font-size: 1.5vw;
@@ -155,6 +155,7 @@
     .timeline-container-content{
         font-size: 1.5vw;
         list-style-type: none;
+        color: rgba(255, 255, 255, 0.774);
     }
     .timeline-container-caption{
       font-size: 1vw;

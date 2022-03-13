@@ -85,7 +85,7 @@
   @media screen and (min-width: 1200px) {
     .collapsible{
         width: 65%;
-        margin-top: 3vw;
+        margin-bottom: 3vw;
     
     }
     .collapsible .header{

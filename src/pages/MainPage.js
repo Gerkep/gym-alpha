@@ -54,22 +54,22 @@ class MainPage extends React.Component {
             <div className="page">
                 <h1 className="main-header appearing">BUILDING A STRONG BRAND TOGETHER.</h1>
                 <p className="about desktop appearing">2777 NFTS MADE TO EMPOWER GYM RATS AND ATHLETES.<br/> GYM ALPHA IS MUCH MORE THAN A BRAND, IT IS A GYM<br/> AND BUSINESS ORIENTED COMMUNITY.</p>
-                <button className="button join-btn appearing">JOIN DISCORD</button>
+                <a href="https://discord.gg/725SakGDPU" className="button join-btn appearing">JOIN DISCORD</a>
                 <div className="main-image"><div className="image-dim-top"></div><div className="image-dim-left"></div></div>
                 <h1 className="main-header next-header mobile">ABOUT</h1>
                 <p className="about mobile">2777 NFTs made to empower gym rats and athletes. Gym Alpha is much more than a brand, it's a gym and business oriented community.</p>
-                <h1 className="main-header next-header appearing" id="membership-header">MEMBERSHIP BENEFITS.</h1>
+                <h1 className="main-header next-header appearing" id="membership-header">MEMBERSHIP BENEFITS</h1>
                 <div className="benefits-container">
-                    <HolderBenefit image={dollarPic} header="Financial" text="Holders of our DAO will recieve dividend from our brand's profit every 3 months."/>
-                    <HolderBenefit image={giftPic} header="Gifts" text="Holders of our DAO will recieve dividend from our brand's profit every 3 months."/>
-                    <HolderBenefit image={gymPic} header="Gym For Free" text="Holders of our DAO will recieve dividend from our brand's profit every 3 months."/>
-                    <HolderBenefit image={walletPic} header="Discounts" text="Holders of our DAO will recieve dividend from our brand's profit every 3 months."/>
-                    <HolderBenefit image={ticketPic} header="VIP Tickets" text="Holders of our DAO will recieve dividend from our brand's profit every 3 months."/>
-                    <HolderBenefit image={phonePic} header="Connections" text="Holders of our DAO will recieve dividend from our brand's profit every 3 months."/>
+                    <HolderBenefit image={dollarPic} header="Dividends" text="You will recieve dividend from our brand's profit every 3 months."/>
+                    <HolderBenefit image={giftPic} header="Gifts" text="Once we launch our online store, we will begin sending gifts to randomly selected holders."/>
+                    <HolderBenefit image={gymPic} header="Gym For Free" text="Members of the main DAO will receive a free pass for every our gyms all around the world."/>
+                    <HolderBenefit image={walletPic} header="Discounts" text="You will get 10% off for every product in our offer."/>
+                    <HolderBenefit image={ticketPic} header="VIP Tickets" text="Holders with rare NFTs will receive a free VIP invitaion for our events."/>
+                    <HolderBenefit image={phonePic} header="Connections" text="You will make new friends in our discord category intended for holders and participate in exclusive seminars."/>
                 </div>
-                <h1 className="main-header next-header appearing" id="roadmap-header">ROADMAP.</h1>
+                <h1 className="main-header next-header appearing" id="roadmap-header">ROADMAP</h1>
                 <Timeline/>
-                <h1 className="main-header next-header appearing">MEET THE TEAM.</h1>
+                <h1 className="main-header next-header appearing">MEET THE TEAM</h1>
                 <div className="team-container">
                     <TeamCard profilePicture={founderPic} name="Piotr Gerke" position="The Pioneer" socialMedia={["https://twitter.com/PeterGerke_", "https://www.instagram.com/gerkedev/", "https://www.facebook.com/profile.php?id=100011194814784", "https://www.linkedin.com/in/piotr-gerke-137a05214/"]} />
                 </div>
@@ -90,7 +90,7 @@ class MainPage extends React.Component {
                 </div>
                 <p className="appearing" id="faq-caption">If you have any other questions feel free<br className="mobile"/> to contact us on social media!</p>
                 <div className="end-btn-container appearing">
-                    <button className="end-dc-btn"><h2 className="end-dc-text">JOIN US ON DISCORD !</h2><div className="discord-img"></div></button>
+                    <a href="https://discord.gg/725SakGDPU" className="end-dc-btn"><h2 className="end-dc-text">JOIN US ON DISCORD !</h2><div className="discord-img"></div></a>
                 </div>
             </div>
         )
