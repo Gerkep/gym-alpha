@@ -15,9 +15,9 @@ const Footer = () => {
                     <Link className="footer-link" to="/dao">DAO</Link>
             </div>
             <div className="footer-media">
-                <a className="media-icon facebook footer-media-icon" href="#"></a>
-                <a className="media-icon twitter footer-media-icon" href="#"></a>
-                <a className="media-icon instagram footer-media-icon" href="#"></a>
+                <a className="media-icon facebook footer-media-icon" href="https://www.facebook.com/Gym-Alpha-105759028738624"></a>
+                <a className="media-icon twitter footer-media-icon" href="https://twitter.com/UnrevealedNFT_"></a>
+                <a className="media-icon instagram footer-media-icon" href="https://www.instagram.com/gymalphapack/"></a>
             </div>
             <div className="footer-contribution">
                 <p>@2022 Gym Alpha <br className="mobile"/> Designed & Developed by Piotr Gerke</p>
