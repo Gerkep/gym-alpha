@@ -60,12 +60,12 @@ class MainPage extends React.Component {
                 <p className="about mobile">5777 NFTs made to empower gym rats and athletes. Gym Alpha is much more than a brand, it's a gym and business oriented community.</p>
                 <h1 className="main-header next-header appearing" id="membership-header">MEMBERSHIP BENEFITS</h1>
                 <div className="benefits-container">
-                    <HolderBenefit image={dollarPic} header="Staking" text="By becoming a member of our DAO your NFT will be passively earning for you our $WHEY token."/>
+                    <HolderBenefit image={dollarPic} header="Staking & Dividends" text="As a member you will be passively earning $WHEY token. Elite NFT holders will be receiving a dividend every 3 mo."/>
                     <HolderBenefit image={giftPic} header="Gifts" text="Once we launch our online store, we will begin sending gifts to randomly selected holders."/>
-                    <HolderBenefit image={gymPic} header="Gym For Free" text="Members of the main DAO will receive a free pass for every our gyms all around the world."/>
-                    <HolderBenefit image={walletPic} header="Discounts" text="You will get 10% off for every product in our offer as well as events."/>
+                    <HolderBenefit image={gymPic} header="Gym For Free" text="All active members of the Main DAO will have 50% off for pass to all of our gyms all around the world. Elite ones- free."/>
+                    <HolderBenefit image={walletPic} header="Discounts" text="You will get discounts for every product in our offer as well as events."/>
                     <HolderBenefit image={ticketPic} header="VIP Tickets" text="Holders with rare NFTs will receive a free VIP invitaion for our events."/>
-                    <HolderBenefit image={phonePic} header="Connections" text="You will make new friends in our discord category intended for holders and participate in exclusive seminars."/>
+                    <HolderBenefit image={phonePic} header="Connections" text="You will have access to our Discord category intended for holders and exclusive seminars."/>
                 </div>
                 <h1 className="main-header next-header appearing" id="roadmap-header">ROADMAP</h1>
                 <Timeline/>

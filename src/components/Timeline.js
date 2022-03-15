@@ -89,7 +89,7 @@ class Timeline extends React.Component {
             <div className="container left">
                 <div className="content">
                     <h1 className="timeline-container-header">NFT Mint & DAO Launch</h1>
-                    <p className="timeline-container-date">May/June 2022</p>
+                    <p className="timeline-container-date">June 2022</p>
                     <p className="timeline-container-content">
                         Once we have fundamentals we can really start building! 
                         In this phase you will be able to acquire an NFT, become a member 
@@ -113,7 +113,7 @@ class Timeline extends React.Component {
                     </p><br/>
                     <ul className="timeline-container-content">
                         <li>- Mint and launch of Merchandise DAO</li>
-                        <li>- Votinings regarding merchandise(manufacturer, type of products etc.)</li>
+                        <li>- Votings regarding merchandise(manufacturer, type of products etc.)</li>
                         <li>- Create chosen products(some of them sent to community)</li>
                         <li>- Launch online store</li>
                         <li>- Our stand at chosen big fitness events</li>
