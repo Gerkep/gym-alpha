@@ -43,7 +43,8 @@ class Navbar extends React.Component{
             menuOpen = false;
         }
     })
-    link.addEventListener('click', () => {
+    links.forEach(link => {
+        link.addEventListener('click', () => {
             hamburgerBtn.classList.remove('open');
             menu.classList.remove('open');
             document.body.style.overflow = 'scroll';
@@ -51,6 +52,7 @@ class Navbar extends React.Component{
                 link.classList.remove('appear');
             })
             menuOpen = false;
+    })
     })
     }
 
