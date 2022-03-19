@@ -100,6 +100,8 @@ class Timeline extends React.Component {
                         <li>- $WHEY token launch</li>
                         <li>- Launch main DAO</li>
                         <li>- First DAO votings</li>
+                        <li>- Send first newsletter</li>
+                        <li>- Hire personal trainers at your disposal(each holder will be able to receive a training plan with an individual approach and advice)</li>
                     </ul>
                 </div>
             </div>
