@@ -65,7 +65,7 @@ class MainPage extends React.Component {
                     <HolderBenefit image={giftPic} header="Gifts" text="Once we launch our online store, we will begin sending gifts to randomly selected holders."/>
                     <HolderBenefit image={gymPic} header="Gym For Free" text="All active members of the Main DAO will have 50% off for pass to all of our gyms all around the world. Elite ones- free."/>
                     <HolderBenefit image={walletPic} header="Discounts" text="You will get discounts for every product in our offer as well as events."/>
-                    <HolderBenefit image={ticketPic} header="VIP Tickets" text="Holders with rare NFTs will receive a free VIP invitaion for our events."/>
+                    <HolderBenefit image={ticketPic} header="VIP Tickets" text="Holders with rare NFTs will receive a free VIP invitation for our events."/>
                     <HolderBenefit image={phonePic} header="Connections" text="You will have access to our Discord category intended for holders and exclusive seminars."/>
                 </div>
                 <h1 className="main-header next-header appearing" id="roadmap-header">ROADMAP</h1>
