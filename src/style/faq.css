@@ -9,7 +9,7 @@
     border: none;
     outline: none;
     cursor: pointer;
-    border-bottom: solid rgba(255, 255, 255, 0.705) 0.6vw;
+    border-bottom: 3px solid; border-image: linear-gradient(90deg, rgba(0, 157, 255, 0.9), rgb(0, 0, 255, 0.4)) 1; border-left:none; border-top:none; border-right:none;
 }
 .faq-header-container{
     width: 100%;

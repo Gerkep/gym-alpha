@@ -53,9 +53,13 @@ class MainPage extends React.Component {
     render(){
         return (
             <div className="page">
-                <h1 className="main-header appearing">BUILDING A STRONG BRAND TOGETHER.</h1>
-                <p className="about desktop appearing">5777 NFTS MADE TO EMPOWER GYM RATS AND ATHLETES.<br/> GYM ALPHA IS MUCH MORE THAN A BRAND, IT IS A GYM<br/> AND BUSINESS ORIENTED COMMUNITY.</p>
-                <a href="https://discord.gg/725SakGDPU" className="button join-btn appearing">JOIN DISCORD</a>
+                <div className="intro-desktop">
+                    <h1 className="main-header appearing" id="intro-header">BUILDING A STRONG BRAND TOGETHER.</h1>
+                    <p className="about desktop appearing">5777 NFTS MADE TO EMPOWER GYM RATS AND ATHLETES.<br/> GYM ALPHA IS MUCH MORE THAN A BRAND, IT IS A GYM<br/> AND BUSINESS ORIENTED COMMUNITY.</p>
+                    <a href="https://discord.gg/725SakGDPU" className="button join-btn appearing">JOIN DISCORD</a>
+                    <div className="image-dim-bottom"></div>
+
+                </div>
                 <div className="main-image"><div className="image-dim-top"></div><div className="image-dim-left"></div></div>
                 <h1 className="main-header next-header mobile">ABOUT</h1>
                 <p className="about mobile">5777 NFTs made to empower gym rats and athletes. Gym Alpha is much more than a brand, it's a gym and business oriented community.</p>

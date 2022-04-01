@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     padding-top: 0vw;
+    background-color: transparent;
 }
 .logo{
     margin-top: 8vw;
