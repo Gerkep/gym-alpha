@@ -54,7 +54,7 @@ class MainPage extends React.Component {
         return (
             <div className="page">
                 <div className="intro-desktop">
-                    <h1 className="main-header appearing" id="intro-header">UNLEASH THE POWER <br className="desktop"/>OF NFT COMMUNITY.</h1>
+                    <h1 className="main-header appearing" id="intro-header">UNLEASH THE POWER <br className="desktop"/>OF NFT <span className="underlined mobile">COMMUNITY.</span></h1>
                     <p className="about desktop appearing">GYM ALPHA IS MUCH MORE THAN JUST A <b>DECENTRALIZED FITNESS BRAND.</b> IT IS A GYM AND NFT ORIENTED <b>COMMUNITY, DETERMINED TO SHOW</b> THE WORLD <b>THE TRUE POWER OF NFTs.</b><br/> </p>
                     <a href="https://discord.gg/725SakGDPU" className="button join-btn appearing">JOIN DISCORD</a>
                     <div className="image-dim-bottom"></div>
