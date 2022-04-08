@@ -11,7 +11,6 @@ import gymPic from "../images/gym-dumbell.png";
 import walletPic from "../images/wallet.png";
 import ticketPic from "../images/vip.png";
 import phonePic from "../images/people.png";
-import backgroundVideo from "../images/Gym_Alpha_Blue.mp4";
 import "../style/main.css";
 
 class MainPage extends React.Component {
@@ -61,11 +60,7 @@ class MainPage extends React.Component {
                     <div className="image-dim-bottom"></div>
 
                 </div>
-                {/* <div className="main-image"><div className="image-dim-top"></div><div className="image-dim-left"></div></div> */}
-                <video loop autoPlay className="background-video">
-                    <source src={backgroundVideo} type="video/mp4"/>
-                    Your browser does not support the video tag.
-                </video>
+                <div className="main-image"><div className="image-dim-top"></div><div className="image-dim-left"></div></div>
                 <h1 className="main-header next-header mobile"><span className="underlined">ABOUT</span></h1>
                 <p className="about mobile">5777 NFTs made to empower gym rats and athletes. Gym Alpha is much more than a brand, it's a gym and business oriented community.</p>
                 <h1 className="main-header next-header appearing" id="membership-header">MEMBERSHIP <span className="underlined">BENEFITS</span></h1>
