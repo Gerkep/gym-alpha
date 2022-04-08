@@ -11,6 +11,7 @@ import gymPic from "../images/gym-dumbell.png";
 import walletPic from "../images/wallet.png";
 import ticketPic from "../images/vip.png";
 import phonePic from "../images/people.png";
+import backgroundVideo from "../images/Gym_Alpha_Blue.mp4";
 import "../style/main.css";
 
 class MainPage extends React.Component {
@@ -54,13 +55,17 @@ class MainPage extends React.Component {
         return (
             <div className="page">
                 <div className="intro-desktop">
-                    <h1 className="main-header appearing" id="intro-header">UNLEASH THE POWER <br className="desktop"/>OF NFT <span className="underlined mobile">COMMUNITY.</span></h1>
+                    <h1 className="main-header appearing" id="intro-header">UNLEASH THE POWER <br className="desktop"/>OF NFT <span className="underlined">COMMUNITY.</span></h1>
                     <p className="about desktop appearing">GYM ALPHA IS MUCH MORE THAN JUST A <b>DECENTRALIZED FITNESS BRAND.</b> IT IS A GYM AND NFT ORIENTED <b>COMMUNITY, DETERMINED TO SHOW</b> THE WORLD <b>THE TRUE POWER OF NFTs.</b><br/> </p>
-                    <a href="https://discord.gg/725SakGDPU" className="button join-btn appearing">JOIN DISCORD</a>
+                    {/* <a href="https://discord.gg/725SakGDPU" className="button join-btn appearing">JOIN DISCORD</a> */}
                     <div className="image-dim-bottom"></div>
 
                 </div>
-                <div className="main-image"><div className="image-dim-top"></div><div className="image-dim-left"></div></div>
+                {/* <div className="main-image"><div className="image-dim-top"></div><div className="image-dim-left"></div></div> */}
+                <video loop autoPlay className="background-video">
+                    <source src={backgroundVideo} type="video/mp4"/>
+                    Your browser does not support the video tag.
+                </video>
                 <h1 className="main-header next-header mobile"><span className="underlined">ABOUT</span></h1>
                 <p className="about mobile">5777 NFTs made to empower gym rats and athletes. Gym Alpha is much more than a brand, it's a gym and business oriented community.</p>
                 <h1 className="main-header next-header appearing" id="membership-header">MEMBERSHIP <span className="underlined">BENEFITS</span></h1>
@@ -96,9 +101,9 @@ class MainPage extends React.Component {
                     </div>
                 </div>
                 <p className="appearing" id="faq-caption">If you have any other questions feel free<br className="mobile"/> to contact us on social media!</p>
-                <div className="end-btn-container appearing">
+                {/* <div className="end-btn-container appearing">
                     <a href="https://discord.gg/725SakGDPU" className="end-dc-btn"><h2 className="end-dc-text">JOIN US ON DISCORD !</h2><div className="discord-img"></div></a>
-                </div>
+                </div> */}
             </div>
         )
     }
