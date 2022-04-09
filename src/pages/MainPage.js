@@ -53,17 +53,18 @@ class MainPage extends React.Component {
     render(){
         return (
             <div className="page">
+                <div className="dim-background"></div>
                 <div className="intro-desktop">
                     <h1 className="main-header appearing" id="intro-header">UNLEASH THE POWER <br className="desktop"/>OF NFT <span className="underlined">COMMUNITY.</span></h1>
-                    <p className="about desktop appearing">GYM ALPHA IS MUCH MORE THAN JUST A <b>DECENTRALIZED FITNESS BRAND.</b> IT IS A GYM AND NFT ORIENTED <b>COMMUNITY, DETERMINED TO SHOW</b> THE WORLD <b>THE TRUE POWER OF NFTs.</b><br/> </p>
+                    <p className="about desktop appearing">GYM ALPHA IS MUCH MORE THAN JUST A <b>DECENTRALIZED FITNESS BRAND.</b> IT IS A GYM AND NFT ORIENTED <b>COMMUNITY, DETERMINED TO SHOW</b> THE WORLD <b><span className="underlined">THE TRUE POWER OF NFTs.</span></b><br/> </p>
                     {/* <a href="https://discord.gg/725SakGDPU" className="button join-btn appearing">JOIN DISCORD</a> */}
                     <div className="image-dim-bottom"></div>
 
                 </div>
                 <div className="main-image"><div className="image-dim-top"></div><div className="image-dim-left"></div></div>
-                <h1 className="main-header next-header mobile"><span className="underlined">ABOUT</span></h1>
+                <h1 className="next-header mobile"><span className="underlined">ABOUT</span></h1>
                 <p className="about mobile">5777 NFTs made to empower gym rats and athletes. Gym Alpha is much more than a brand, it's a gym and business oriented community.</p>
-                <h1 className="main-header next-header appearing" id="membership-header">MEMBERSHIP <span className="underlined">BENEFITS</span></h1>
+                <h1 className="next-header appearing" id="membership-header">MEMBERSHIP <span className="underlined">BENEFITS</span></h1>
                 <div className="benefits-container">
                     <HolderBenefit image={dollarPic} header="Staking & Dividends" text="As a member you will be passively earning $WHEY token. Elite NFT holders will be receiving a dividend every 3 mo."/>
                     <HolderBenefit image={giftPic} header="Gifts" text="Once we launch our online store, we will begin sending gifts to randomly selected holders."/>
@@ -72,9 +73,9 @@ class MainPage extends React.Component {
                     <HolderBenefit image={ticketPic} header="VIP Tickets" text="Holders with rare NFTs will receive a free VIP invitation for our events."/>
                     <HolderBenefit image={phonePic} header="Connections" text="You will have access to our Discord category intended for holders and exclusive seminars."/>
                 </div>
-                <h1 className="main-header next-header appearing" id="roadmap-header"><span className="underlined">ROADMAP</span></h1>
+                <h1 className="next-header appearing" id="roadmap-header"><span className="underlined">ROADMAP</span></h1>
                 <Timeline/>
-                <h1 className="main-header next-header appearing" id="team-header">MEET THE <span className="underlined">TEAM</span></h1>
+                <h1 className="next-header appearing" id="team-header">MEET THE <span className="underlined">TEAM</span></h1>
                 <div className="team-container">
                     <TeamCard profilePicture={founderPic} name="Piotr Gerke" position="The Pioneer" socialMedia={["https://twitter.com/PeterGerke_", "https://www.instagram.com/gerkedev/", "https://www.facebook.com/profile.php?id=100011194814784", "https://www.linkedin.com/in/piotr-gerke-137a05214/"]} />
                     <TeamCard profilePicture={martynaPic} name="Martyna Kaźmierczak" position="Discord Mod" socialMedia={["https://twitter.com/Martynak041", "https://www.instagram.com/martynak0076/"]} />
