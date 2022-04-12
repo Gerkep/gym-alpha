@@ -66,7 +66,7 @@ class MainPage extends React.Component {
                 <p className="about mobile">5777 NFTs made to empower gym rats and athletes. Gym Alpha is much more than a brand, it's a gym and business oriented community.</p>
                 <h1 className="next-header appearing" id="membership-header">MEMBERSHIP <span className="underlined">BENEFITS</span></h1>
                 <div className="benefits-container">
-                    <HolderBenefit image={dollarPic} header="Staking & Dividends" text="As a member you will be passively earning $WHEY token. Elite NFT holders will be receiving a dividend every 3 mo."/>
+                    <HolderBenefit image={dollarPic} header="Staking & Dividends" text="As a member you will be passively earning governance token. Elite NFT holders will be receiving a dividend every 3 mo."/>
                     <HolderBenefit image={giftPic} header="Gifts" text="Once we launch our online store, we will begin sending gifts to randomly selected holders."/>
                     <HolderBenefit image={gymPic} header="Gym For Free" text="All active members of the Main DAO will have 50% off for pass to all of our gyms all around the world. Elite ones- free."/>
                     <HolderBenefit image={walletPic} header="Discounts" text="You will get discounts for every product in our offer as well as events."/>

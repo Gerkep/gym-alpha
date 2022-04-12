@@ -89,7 +89,7 @@ class Timeline extends React.Component {
             <div className="container left">
                 <div className="content">
                     <h1 className="timeline-container-header">NFT Mint & DAO Launch</h1>
-                    <p className="timeline-container-date">June 2022</p>
+                    <p className="timeline-container-date">July 2022</p>
                     <p className="timeline-container-content">
                         Once we have fundamentals we can really start building! 
                         In this phase you will be able to acquire an NFT, become a member 
@@ -130,7 +130,7 @@ class Timeline extends React.Component {
             <div className="container left">
                 <div className="content">
                     <h1 className="timeline-container-header">First GYM</h1>
-                    <p className="timeline-container-date">Hopefully Q1 2023</p>
+                    <p className="timeline-container-date">Hopefully Q2 2023</p>
                     <p className="timeline-container-content">
                         With money from merchandise and NFT mint we will be able to start building 
                         our first gym governed by community!
