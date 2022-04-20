@@ -137,7 +137,7 @@
     }
     .logo{
         grid-area: logo;
-        margin: 3vw 0 0 3vw;
+        margin: 2vw 0 0 3vw;
         height: 6vw;
         width: 10.3vw;
         position: absolute;

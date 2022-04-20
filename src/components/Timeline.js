@@ -81,6 +81,7 @@ class Timeline extends React.Component {
                         <li>- Start our Discord(channel for your PR’s, personal trainer, workout music and much more!)</li>
                         <li>- Create a website✅</li>
                         <li>- Assemble a great social media/marketing team</li>
+                        <li>- Create a stunning voxel artwork</li>
                         <li>- Bring popular athletes on board</li>
                     </ul>
                 </div>

@@ -93,7 +93,7 @@
     .card{
         width: 20vw;
         height: 30vw;
-        margin: 10vw 7vw 0vw 7vw;
+        margin: 10vw 5vw 0vw 5vw;
     }
     .card::before{
         content: '';
