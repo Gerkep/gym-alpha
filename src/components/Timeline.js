@@ -78,10 +78,9 @@ class Timeline extends React.Component {
                         we are planning to:
                     </p><br/>
                     <ul className="timeline-container-content">
-                        <li>- Start our Discord(channel for your PR’s, personal trainer, workout music and much more!)</li>
+                        <li>- Start our Discord(channel for your PR’s, personal trainer, workout music and much more!)✅</li>
                         <li>- Create a website✅</li>
                         <li>- Assemble a great social media/marketing team</li>
-                        <li>- Create a stunning voxel artwork</li>
                         <li>- Bring popular athletes on board</li>
                     </ul>
                 </div>
@@ -163,7 +162,7 @@ class Timeline extends React.Component {
                         <li>- Collaborate with well-known athletes and youtubers</li>
                         <li>- Expand our merchandise offer</li>
                         <li>- Organise spontaneous trainings with founders all around the world</li>
-                        <li>- Continue biulding amazing community</li>
+                        <li>- Continue building amazing community</li>
                         <li>- Partner with well-known brands(Gymshark, Adidas, Nike...)</li>
                     </ul><br/>
                     </div><br/>
