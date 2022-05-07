@@ -5,7 +5,6 @@ import TeamCard from "../components/TeamCard";
 import Timeline from "../components/Timeline";
 import founderPic from "../images/founder.jpeg";
 import martynaPic from "../images/Martyna.jpg";
-import artistPic from "../images/Sajad.jpeg";
 import dollarPic from "../images/money.png";
 import giftPic from "../images/gift.png";
 import gymPic from "../images/gym-dumbell.png";
@@ -80,7 +79,6 @@ class MainPage extends React.Component {
                 <div className="team-container">
                     <TeamCard profilePicture={founderPic} name="Piotr Gerke" position="The Pioneer" socialMedia={["https://twitter.com/PeterGerke_", "https://www.instagram.com/gerkedev/", "https://www.facebook.com/profile.php?id=100011194814784", "https://www.linkedin.com/in/piotr-gerke-137a05214/"]} />
                     <TeamCard profilePicture={martynaPic} name="Martyna Kaźmierczak" position="Discord Mod" socialMedia={["https://twitter.com/Martynak041", "https://www.instagram.com/martynak0076/"]} />
-                    <TeamCard profilePicture={artistPic} name="Sajad" position="Art Director" socialMedia={["https://twitter.com/sajadalizadeh"]} />
                 </div>
                 <h1 className="main-header next-header appearing">FAQ</h1>
                 <div className="faq-container">  
