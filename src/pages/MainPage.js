@@ -97,9 +97,9 @@ class MainPage extends React.Component {
                     </div>
                 </div>
                 <p className="appearing" id="faq-caption">If you have any other questions feel free<br className="mobile"/> to contact us on social media!</p>
-                {/* <div className="end-btn-container appearing">
+                <div className="end-btn-container appearing">
                     <a href="https://discord.gg/725SakGDPU" className="end-dc-btn"><h2 className="end-dc-text">JOIN US ON DISCORD !</h2><div className="discord-img"></div></a>
-                </div> */}
+                </div>
             </div>
         )
     }
