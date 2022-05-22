@@ -17,7 +17,7 @@ const Footer = () => {
             <div className="footer-media">
                 <a className="media-icon facebook footer-media-icon" href="https://www.facebook.com/Gym-Alpha-105759028738624"></a>
                 <a className="media-icon twitter footer-media-icon" href="https://twitter.com/GymAlphaNFT"></a>
-                <a className="media-icon instagram footer-media-icon" href="https://www.instagram.com/gymalpha_community/"></a>
+                <a className="media-icon instagram footer-media-icon" href="https://www.instagram.com/gymalphagenesis/"></a>
             </div>
             <div className="footer-contribution">
                 <p>@2022 Gym Alpha <br className="mobile"/> Designed & Developed by Piotr Gerke</p>
