@@ -7,9 +7,9 @@
     background-color: transparent;
 }
 .logo{
-    margin-top: 8vw;
-    height: 18.6vw;
-    width: 32vw;
+    margin-top: 7vw;
+    height: 11vw;
+    width: 18.8vw;
     position: absolute;
     background-image: url("../images/gym-alpha-white.png");
     background-position: center;
@@ -152,9 +152,18 @@
         align-items: center;
         height: 10vw;
         grid-area: navbar-links;
+        background-color: rgba(0, 0, 0, 0.705);
+        backdrop-filter: blur(10px);
+        width: 60vw;
+        margin-left: 20vw;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 26% 100%);
     }
     .navbar-desktop-link{
         margin: 0 3vw 0 3vw;
         font-size: 1.2vw;
+        transition: all 0.5s ease;
+    }
+    .navbar-desktop-link:hover{
+        transform: scale(1.1);
     }
 }

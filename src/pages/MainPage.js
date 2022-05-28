@@ -56,21 +56,21 @@ class MainPage extends React.Component {
                 <div className="dim-background"></div>
                 <div className="intro-desktop">
                     <h1 className="main-header appearing" id="intro-header">UNLEASH THE POWER <br className="desktop"/>OF NFT <span className="underlined">COMMUNITY.</span></h1>
-                    <p className="about desktop appearing">GYM ALPHA IS MUCH MORE THAN JUST A <b>DECENTRALIZED FITNESS BRAND.</b> IT IS A GYM AND NFT ORIENTED <b>COMMUNITY, DETERMINED TO SHOW</b> THE WORLD <b><span className="underlined">THE TRUE POWER OF NFTs.</span></b><br/> </p>
-                    {/* <a href="https://discord.gg/725SakGDPU" className="button join-btn appearing">JOIN DISCORD</a> */}
+                    <p className="about desktop appearing">Fitness gamification is closer than ever before.</p>
+                    <a href="https://discord.gg/725SakGDPU" className="button join-btn appearing mobile">JOIN DISCORD</a>
                     <div className="image-dim-bottom"></div>
 
                 </div>
                 <div className="main-image"><div className="image-dim-top"></div><div className="image-dim-left"></div></div>
                 <h1 className="next-header mobile"><span className="underlined">ABOUT</span></h1>
-                <p className="about mobile">5777 NFTs made to empower gym rats and athletes. Gym Alpha is much more than a brand, it's a gym and business oriented community.</p>
+                <p className="about mobile">Next gen fitness brand by You redefining how the modern brands look like and bringing gamification to the fitness industry!</p>
                 <h1 className="next-header appearing" id="membership-header">MEMBERSHIP <span className="underlined">BENEFITS</span></h1>
                 <div className="benefits-container">
-                    <HolderBenefit image={dollarPic} header="Staking & Dividends" text="As a member you will be passively earning governance token. Elite NFT holders will be receiving a dividend every 3 mo."/>
-                    <HolderBenefit image={giftPic} header="Gifts" text="Once we launch our online store, we will begin sending gifts to randomly selected holders."/>
-                    <HolderBenefit image={gymPic} header="Gym For Free" text="All active members of the Main DAO will have 50% off for pass to all of our gyms all around the world. Elite ones- free."/>
-                    <HolderBenefit image={walletPic} header="Discounts" text="You will get discounts for every product in our offer as well as events."/>
-                    <HolderBenefit image={ticketPic} header="VIP Tickets" text="Holders with rare NFTs will receive a free VIP invitation for our events."/>
+                    <HolderBenefit image={dollarPic} header="Staking & Dividends" text="As a member you will be passively earning governance token. Rarest NFTs will give extra dividends."/>
+                    <HolderBenefit image={giftPic} header="Gifts" text="Once the online store is ready, we will begin sending gifts to randomly selected holders."/>
+                    <HolderBenefit image={gymPic} header="Gym For Free" text="All active members will have 50% off for pass to all of our future gyms all around the world. Rarest ones- free."/>
+                    <HolderBenefit image={walletPic} header="Discounts" text="You will get significant discounts for every product in our offer as well as events."/>
+                    <HolderBenefit image={ticketPic} header="VIP Tickets" text="Holders with rare NFTs will be receiving a free VIP invitations for our future events."/>
                     <HolderBenefit image={phonePic} header="Connections" text="You will have access to our Discord category intended for holders and exclusive seminars."/>
                 </div>
                 <h1 className="next-header appearing" id="roadmap-header"><span className="underlined">ROADMAP</span></h1>

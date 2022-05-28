@@ -38,5 +38,6 @@
     .benefit-text{
       font-size: 1.2vw;
       margin-top: 1vw;
+      color: rgba(255, 255, 255, 0.703);
     }
   }

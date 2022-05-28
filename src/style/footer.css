@@ -104,7 +104,7 @@
         height: 4vw;
     }
     .footer-media-icon{
-        margin: 0 2vw 0 2vw;
+        margin: 0 2vw 0 2vw !important;
         width: 2.4vw;
         height: 2.4vw;
     }

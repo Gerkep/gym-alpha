@@ -129,7 +129,7 @@ class Timeline extends React.Component {
             <div className="timeline-graphics desktop right"><h2 className="timeline-phase">Phase 4</h2><div className="timeline-img" id="gym-img"></div></div>
             <div className="container left">
                 <div className="content">
-                    <h1 className="timeline-container-header">First GYM</h1>
+                    <h1 className="timeline-container-header">First GYM & Gamification</h1>
                     <p className="timeline-container-date">Hopefully Q2 2023</p>
                     <p className="timeline-container-content">
                         With money from merchandise and NFT mint we will be able to start building 
@@ -137,10 +137,9 @@ class Timeline extends React.Component {
                     </p><br/>
                     <ul className="timeline-container-content">
                         <li>- Votings regarding: place, cost, style, contractor etc.</li>
-                        <li>- Purchase land</li>
+                        <li>- Hiring best devs to work on gamification</li>
                         <li>- Begin construction process</li>
-                        <li>- Buy equipment and hire staff(Or make it mostly autonomous?  It all depends on your votes!)</li>
-                        <li>- Organise marketing campaign for our new gym</li>
+                        <li>- Create smart equipment and make it autonomous</li>
                         <li>- Welcome our first gym members!</li>
                     </ul><br/>
                     <p className="timeline-container-caption">

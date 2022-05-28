@@ -86,7 +86,7 @@ a{
 .main-header{
     font-size: 10vw;
     font-weight: 800;
-    margin: 5vw 0 0 6vw;
+    margin: 0vw 0 0 6vw;
     max-width: 90vw;
 }
 .next-header{
@@ -115,7 +115,7 @@ a{
 .main-image{
     width: 100%;
     height: 70vw;
-    margin-top: 25vw;
+    margin-top: 30vw;
     background-image: url("../images/GymExterior.png");
     background-size: contain;
     background-position: center;
@@ -186,13 +186,15 @@ a{
         font-size: 4vw;
         text-align: center;
         margin: 0 auto;
+        text-shadow: 8px 8px 10px black;
+        letter-spacing: 0.15vw;
     }
     .dim-background{
         width: 100%;
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.137);
         position:absolute;
-        margin-top: -40vw;
+        margin-top: -30vw;
         z-index: -1;
     }
     #intro-header{
@@ -208,11 +210,12 @@ a{
     }
     .about{
         font-size: 1.5vw;
-        color: rgb(255, 255, 255);
+        color: rgba(255, 255, 255, 0.708);
         max-width: 52vw;
         text-align: center;
         margin: 0 auto;
         margin-top: 5vw;
+        font-weight: 400;
     }
     .join-btn{
         position: absolute;
@@ -228,7 +231,7 @@ a{
         width: 100vw;
         height: 122vh;
         position: absolute;
-        top: -100vh;
+        top: -104vh;
         float: right;
         background-image: url("../images/reception.jpg");
         background-size: cover;
@@ -247,8 +250,8 @@ a{
     }
     .image-dim-bottom{
         width: 100%;
-        height: 80vh;
-        margin-top: -27vw;
+        height: 90vh;
+        margin-top: -25vw;
         background-image: linear-gradient(rgb(0, 0, 0, 0) 1%, rgba(0, 0, 0) 70%);
     }
     .image-dim-top{
