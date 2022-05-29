@@ -55,7 +55,7 @@ class MainPage extends React.Component {
             <div className="page">
                 <div className="dim-background"></div>
                 <div className="intro-desktop">
-                    <h1 className="main-header appearing" id="intro-header">UNLEASH THE POWER <br className="desktop"/>OF NFT <span className="underlined">COMMUNITY.</span></h1>
+                    <h1 className="main-header appearing" id="intro-header">THE POWER <br className="desktop"/>OF NFT <span className="underlined">COMMUNITY.</span></h1>
                     <p className="about desktop appearing">Fitness gamification is closer than ever before.</p>
                     <a href="https://discord.gg/725SakGDPU" className="button join-btn appearing mobile">JOIN DISCORD</a>
                     <div className="image-dim-bottom"></div>
