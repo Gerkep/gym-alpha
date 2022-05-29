@@ -75,7 +75,7 @@ class Navbar extends React.Component{
                 <div className="navbar-links">
                     <Link className="navbar-desktop-link" to="/dao">DAO</Link>
                     <Link className="navbar-desktop-link" to="/store">STORE</Link>
-                    <a className="navbar-desktop-link" href="https://drive.google.com/file/d/199DHLfY1Rv2r0OGNaoi6uEJ-MhrfSnf2/view">PITCH</a>
+                    <a className="navbar-desktop-link" href="https://drive.google.com/file/d/199DHLfY1Rv2r0OGNaoi6uEJ-MhrfSnf2/view">PITCH DECK</a>
                     <a className="navbar-desktop-link" href="https://dune-globe-9dc.notion.site/GYM-ALPHA-4c1e7ba461f64ef79144d8343807128e">WHITE PAPER</a>
                 </div>
             </div>
