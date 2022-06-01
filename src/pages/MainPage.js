@@ -3,6 +3,8 @@ import FaqTab from "../components/FaqTab";
 import HolderBenefit from "../components/HolderBenefit";
 import TeamCard from "../components/TeamCard";
 import Timeline from "../components/Timeline";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import founderPic from "../images/founder.jpeg";
 import martynaPic from "../images/Martyna.jpg";
 import dollarPic from "../images/money.png";
@@ -53,6 +55,7 @@ class MainPage extends React.Component {
     render(){
         return (
             <div className="page">
+                <Navbar/>
                 <div className="dim-background"></div>
                 <div className="intro-desktop">
                     <h1 className="main-header appearing" id="intro-header">UNLEASH THE POWER<br className="desktop"/>OF NFT <span className="underlined">COMMUNITY.</span></h1>
@@ -100,6 +103,7 @@ class MainPage extends React.Component {
                 <div className="end-btn-container appearing">
                     <a href="https://discord.gg/725SakGDPU" className="end-dc-btn"><h2 className="end-dc-text">JOIN US ON DISCORD !</h2><div className="discord-img"></div></a>
                 </div>
+                <Footer />
             </div>
         )
     }

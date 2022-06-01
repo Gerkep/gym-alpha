@@ -15,7 +15,6 @@ import "../src/style/main.css"
     return(
             <Router history={history}>
                 <div>
-                    <Navbar/>
                     <Switch>
                         <Route exact path="/" component={MainPage}/>
                         <Route exact path="/dao" component={DaoPage}/>
@@ -23,7 +22,6 @@ import "../src/style/main.css"
                         <Route exact path="/token" component={TokenPage}/>
                         <Route path="*" component={ErrorPage} />
                     </Switch>
-                    <Footer />
                 </div>
             </Router>
     )

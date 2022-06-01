@@ -107,6 +107,8 @@ a{
     position: absolute;
     margin: 10vw 0 0 6vw;
     transition: all 0.5s ease;
+    background: linear-gradient(10deg, rgba(0,0,255,1) 35%, rgba(17,245,253,1) 100%);
+    border: none !important;
 }
 .join-btn:hover{
     color: black;
@@ -231,7 +233,7 @@ a{
         width: 100vw;
         height: 122vh;
         position: absolute;
-        top: -104vh;
+        top: -64vh;
         float: right;
         background-image: url("../images/reception.jpg");
         background-size: cover;
