@@ -59,7 +59,7 @@ class MainPage extends React.Component {
                 <Navbar/>
                 <div className="dim-background"></div>
                 <div className="intro-desktop">
-                    <h1 className="main-header appearing" id="intro-header">UNLEASH THE POWER<br className="desktop"/>OF NFT <span className="underlined">COMMUNITY.</span></h1>
+                    <h1 className="main-header appearing" id="intro-header">UNLEASH THE POWER<br className="desktop"/> OF NFT <span className="underlined">COMMUNITY.</span></h1>
                     <p className="about desktop appearing">Fitness gamification is closer than ever before.</p>
                     {/* <Link className="button appearing mint-btn" to="/mint">MINT</Link> */}
                     <a className="button appearing mint-btn" href="https://discord.gg/725SakGDPU">JOIN DISCORD</a>
