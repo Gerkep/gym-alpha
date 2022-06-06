@@ -178,8 +178,9 @@ a{
     border: none !important;
     position: absolute;
     margin: 10vw 0 0 6vw;
-    width: 30vw;
+    width: 35vw;
     text-align: center;
+    font-size: 4vw;
 }
 .ga-conrner-logo{
     display: none;

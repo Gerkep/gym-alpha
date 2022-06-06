@@ -22,7 +22,7 @@ import "../src/style/main.css"
                         <Route exact path="/dao" component={DaoPage}/>
                         <Route exact path="/store" component={StorePage}/>
                         <Route exact path="/token" component={TokenPage}/>
-                        <Route exact path="/mint" component={Minting}/>
+                        {/* <Route exact path="/mint" component={Minting}/> */}
                         <Route path="*" component={ErrorPage} />
                     </Switch>
                     
