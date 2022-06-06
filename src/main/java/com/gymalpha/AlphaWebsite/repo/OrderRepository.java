@@ -1,8 +1,8 @@
-package com.gymalphastore.GymAlphaStore.repo;
+package com.gymalpha.AlphaWebsite.repo;
 
 import org.springframework.data.repository.CrudRepository;
 
-import com.gymalphastore.GymAlphaStore.model.Order;
+import com.gymalpha.AlphaWebsite.model.Order;
 
 public interface OrderRepository extends CrudRepository<Order, Long> {
 

@@ -1,4 +1,4 @@
-package com.gymalphastore.GymAlphaStore.model;
+package com.gymalpha.AlphaWebsite.model;
 
 import java.util.Objects;
 
@@ -25,7 +25,7 @@ public class Order {
     private String city;
     private String items;
 
-    private Order() {
+    public Order() {
     };
 
     public Order(String country, String mail, String firstName, String lastName, String telephoneNumber,
