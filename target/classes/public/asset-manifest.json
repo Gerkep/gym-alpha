@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.83889df1.css",
-    "main.js": "/static/js/main.62c35abb.js",
+    "main.css": "/static/css/main.06ad32d5.css",
+    "main.js": "/static/js/main.1adc3661.js",
     "static/media/GymExterior.png": "/static/media/GymExterior.83c10e6b1c93e199c6ee.png",
     "static/media/reception.jpg": "/static/media/reception.3198edb30f4526bcc236.jpg",
     "static/media/founder.jpeg": "/static/media/founder.ae8d660b71420fe1e037.jpeg",
-    "static/media/BlueCard.jpg": "/static/media/BlueCard.af5563cda140f8784df9.jpg",
     "static/media/Martyna.jpg": "/static/media/Martyna.47d430ca96f0b013330c.jpg",
     "static/media/gym-alpha-white.png": "/static/media/gym-alpha-white.a0fd543a95992f2df39a.png",
     "static/media/money.png": "/static/media/money.bef7159cb1af62146258.png",
@@ -19,11 +18,11 @@
     "static/media/black-ga.png": "/static/media/black-ga.b0e777226832761c86b3.png",
     "static/media/gym.png": "/static/media/gym.771b66a94223b0719e25.png",
     "index.html": "/index.html",
-    "main.83889df1.css.map": "/static/css/main.83889df1.css.map",
-    "main.62c35abb.js.map": "/static/js/main.62c35abb.js.map"
+    "main.06ad32d5.css.map": "/static/css/main.06ad32d5.css.map",
+    "main.1adc3661.js.map": "/static/js/main.1adc3661.js.map"
   },
   "entrypoints": [
-    "static/css/main.83889df1.css",
-    "static/js/main.62c35abb.js"
+    "static/css/main.06ad32d5.css",
+    "static/js/main.1adc3661.js"
   ]
 }
