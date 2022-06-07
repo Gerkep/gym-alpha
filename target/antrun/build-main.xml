@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="maven-antrun-" default="main">
+  <target name="main">
+    <copy todir="/Users/piotrgerke/Workspaces/VSCode/GymAlpha/gym-alpha/target/classes/public">
+      <fileset dir="/Users/piotrgerke/Workspaces/VSCode/GymAlpha/gym-alpha/frontend/build" />
+    </copy>
+  </target>
+</project>
