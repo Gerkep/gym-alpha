@@ -1,7 +1,0 @@
-com/gymalpha/AlphaWebsite/AlphaWebsiteApplication.class
-com/gymalpha/AlphaWebsite/controller/OrderController.class
-com/gymalpha/AlphaWebsite/repo/OrderRepository.class
-com/gymalpha/AlphaWebsite/model/Order.class
-com/gymalpha/AlphaWebsite/model/Product.class
-com/gymalpha/AlphaWebsite/repo/ProductRepository.class
-com/gymalpha/AlphaWebsite/controller/ProductController.class
