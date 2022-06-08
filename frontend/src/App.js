@@ -6,12 +6,12 @@ import DropPage from "./store/pages/DropPage";
 import TokenPage from "./main/pages/TokenPage";
 import OrderPage from "./store/pages/OrderPage";
 import PaymentPage from "./store/pages/PaymentPage";
+import ThankYouPage from "./store/pages/ThankYouPage";
 import ErrorPage from "./main/pages/ErrorPage";
 import Minting from "./main/pages/MintingPage";
 import history from "./history";
 
 import "../src/main/style/main.css"
-import ThankYouPage from "./store/pages/ThankYouPage";
 
 
  const App = () => {
