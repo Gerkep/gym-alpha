@@ -1,0 +1,33 @@
+.footer{
+    height: 90vw;
+    margin-top: 10vw;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.footer::before{
+    display: none;
+}
+#footer-logo{
+    margin-top: 10vw;
+    height: 12vw;
+    width: 21vw;
+    background-image: url("../../main/images/gym-alpha-white.png");
+}
+.footer-link{
+    color: white;
+}
+
+@media screen and (min-width: 1200px) {
+    .footer{
+        height: 25vw;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        margin-top: 5vw;
+    }
+    #footer-logo{
+        margin-top: 3vw;
+        height: 5.2vw;
+        width: 9vw;
+        background-image: url("../../main/images/gym-alpha-white.png");
+    }
+}

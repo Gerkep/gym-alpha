@@ -1,0 +1,39 @@
+.thankyou-page{
+    background-color: white;
+    color: black;
+
+}
+.thanks-container{
+    margin-bottom: 40vh;   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.thanks{
+    text-align: center;
+    margin-top: 30vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 10vw;
+}
+.main-page-link{
+    color: black;
+    width: 100%;
+    text-align: center;
+    margin-top: 5vh;
+    font-weight: 500;
+    background: linear-gradient(to bottom left,  rgb(0, 229, 255), rgb(0, 0, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5vw;
+}
+
+@media screen and (min-width: 1200px) {
+    .thanks{
+        font-size: 5vw;
+        margin-top: 20vh;
+    }
+    .main-page-link{
+        font-size: 2.5vw;
+    }
+}

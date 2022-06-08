@@ -1,0 +1,87 @@
+.payment-page{
+    background-color: white;
+    color: black;
+}
+.payment-products{
+    display: none;
+}
+.payment-header{
+    font-size: 8vw;
+    margin: 7vw 0 0 5vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+.purchase-note{
+    width: 90vw;
+    margin: 8vw 0 0 5vw;
+}
+.delivery-badge-container{display: flex; margin: 10vw 0 0 5vw; align-items: center;}
+.delivery-badge{
+    width: 10vw;
+    height: 10vw;
+    background-image: url("../images/quality-badge.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.delivery-badge-text{margin-left: 3vw; font-size: 4vw; font-weight: 500;}
+.shipping-cost{margin-left: 5vw; margin-top: 7vw; font-size: 4vw; color: rgb(101, 101, 101);}
+.merch-cost{margin-left: 5vw; margin-top: 1vw; font-size: 4vw; color: rgb(101, 101, 101);}
+.total-cost{margin-left: 5vw; margin-top: 3vw; font-size: 6vw;}
+
+@media screen and (min-width: 1200px) {
+
+    .payment-grid {  display: grid;
+        grid-template-columns: 60vw 40vw;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "payment-products payment-summary";
+    }
+      
+    .payment-products { grid-area: payment-products; display: flex; flex-wrap: wrap; align-items: center;}
+    .payment-product{
+        width: 16vw;
+        height: 16vw;
+        background-image: url("../images/oversizetee.png");
+        background-size: contain;
+        margin:  0 0 0 2.5vw;
+        border-radius: 20px;
+    }
+    .payment-summary { 
+        grid-area: payment-summary; 
+        height: 37vw;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        margin-bottom: 5vw;
+        box-shadow: 2px 4px 40px rgba(0, 0, 0, 0.248);
+        overflow: hidden;
+    }
+    .payment-header{
+        font-size: 2.5vw;
+        margin: 1vw 0 0 2.5vw;
+    }
+    .purchase-note{
+        margin-top: 2.5vw;
+        width: 30vw;
+        margin-left: 2.5vw;
+        font-size: 1.1vw;
+    }
+    .delivery-badge-container{
+        margin-top: 2.5vw;
+        margin-left: 2.5vw;
+    }
+    .delivery-badge{
+        height: 3vw;
+        width: 3vw;
+    }
+    .delivery-badge-text{
+        font-size: 1.5vw;
+        margin-left: 1.5vw;
+    }
+    .shipping-cost{margin-left: 2.5vw; margin-top: 2.5vw; font-size: 1.1vw; color: rgb(101, 101, 101);}
+    .merch-cost{margin-left: 2.5vw; margin-top: 0.5vw; font-size: 1.1vw; color: rgb(101, 101, 101);}
+    .total-cost{margin-left: 2.5vw; margin-top: 1vw; font-size: 1.5vw;}
+      
+}

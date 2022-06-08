@@ -1,0 +1,202 @@
+
+.drop-page{background-color: white; color: black;}
+.drop-counter{
+    margin-left: 5vw;
+    font-weight: 400;
+}
+.merch-img{
+    background-image: url("../images/oversizetee.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vw;
+    margin-top: 5vw;
+}
+.product-name{
+    margin: 10vw 0 0 5vw;
+    font-weight: 900;
+    font-size: 6vw;
+}
+.product-family{
+    font-weight: 400;
+    margin-left: 5vw;
+    font-size: 5vw;
+}
+.sizes-container{
+    display: flex;
+    justify-content: left;
+    margin-top: 3vw;
+}
+.size-container{
+    width: 11vw;
+    height: 11vw;
+    margin: 4vw;
+    box-shadow: 4px 10px 30px rgba(0, 0, 0, 0.254);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+}
+.size-container.disactivated{
+    background-color: rgba(30, 30, 30, 0.128);
+    box-shadow: none;
+    color: rgba(0, 0, 0, 0.269);
+}
+.size-container.selected{
+    border: 2px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    box-shadow: none;
+    border-image-source: linear-gradient(230deg, #11F5FD, #0000FF);
+}
+.product-description{
+    margin-left: 5vw;
+    width: 85vw;
+    margin-top: 5vw;
+}
+.product-badges{
+    margin-top: 8vw;
+    margin-left: 5vw;
+}
+.product-badge{
+    margin-top: 1vw;
+    display: flex;
+    align-items: center;
+}
+.badge-img{
+    width: 9vw;
+    height: 9vw;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.badge-name{
+    margin-left: 3vw;
+    font-weight: 500;
+}
+.quality{
+    background-image: url("../images/quality-badge.png");
+}
+.fabric{
+    background-image: url("../images/fabric-badge.png");
+}
+.purchase-details{
+    display: flex;
+    margin-top: 8vw;
+    align-items: center;
+    margin-left: 5vw;
+}
+.product-price{
+    font-size: 5vw;
+}
+.supply-left{
+    margin-left: 4vw;
+}
+.purchase-btn{
+    margin-left: 4vw;
+    margin-top: 2vw;
+    width: 75vw;
+    height: 17vw;
+    border-radius: 18px;
+    border: none;
+    background-image: linear-gradient(210deg, #11F5FD, #0000FF);
+    color: white;
+    font-size: 6vw;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15vw;
+}
+@media screen and (min-width: 1200px) {
+    .drop-container{
+        display: grid; 
+        grid-template-columns: 60vw 40vw; 
+        grid-template-rows: 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "title-product product-about"; 
+    }
+    .hamburger-btn{
+        display: none;
+    }
+    .title-product { grid-area: title-product; }
+    .product-about { 
+        grid-area: product-about; 
+        border-radius: 30px;
+        box-shadow: 4px 3px 30px rgba(0, 0, 0, 0.219);
+        margin-top: 6vw;
+    }
+    .drop-counter{
+        margin-left: 2.5vw;
+    }
+    .merch-img{
+        background-size: cover;
+        margin-left: 8vw;
+        height: 35vw;
+        width: 42vw;
+        margin-top: 2vw;
+    }
+    .product-name{
+        margin: 1vw 0 0 2.5vw;
+        font-size: 2.5vw;
+    }
+    .product-family{
+        margin-left: 2.5vw;
+        font-size: 1.5vw;
+    }
+    .sizes-container{
+        display: flex;
+        justify-content: left;
+        margin-top: 2vw;
+        margin-left: 2.5vw;
+    }
+    .size-container{
+        width: 3vw;
+        height: 3vw;
+        margin: 0 2vw 0 0vw;
+    }
+    .product-description{
+        margin-left: 2.5vw;
+        width: 35vw;
+        margin-top: 2vw;
+        font-size: 1.1vw;
+    }
+    .product-badges{
+        margin-top: 3vw;
+        margin-left: 2.5vw;
+    }
+    .product-badge{
+        margin-top: 0.25vw;
+    }
+    .badge-img{
+        width: 2.5vw;
+        height: 2.5vw;
+    }
+    .badge-name{
+        margin-left: 1vw;
+        font-size: 1.1vw;
+    }
+    .purchase-details{
+        margin-top: 3vw;
+        margin-left: 2.5vw;
+    }
+    .product-price{
+        font-size: 1.5vw;
+    }
+    .supply-left{
+        margin-left: 2vw;
+        font-size: 1.1vw;
+    }
+    .purchase-btn{
+        margin-left: 2.2vw;
+        margin-top: 0.5vw;
+        width: 22vw;
+        height: 5vw;
+        font-size: 2.5vw;
+        margin-bottom: 2vw;
+        cursor: pointer;
+    }
+}
