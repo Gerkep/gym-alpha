@@ -11,7 +11,7 @@ import ErrorPage from "./main/pages/ErrorPage";
 import Minting from "./main/pages/MintingPage";
 import history from "./history";
 
-import "../src/main/style/main.css"
+import "./main/style/main.css"
 
 
  const App = () => {
