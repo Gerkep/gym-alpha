@@ -13,23 +13,34 @@ public class Product {
     private String name;
     private String material;
     private String type;
+    private String description;
+    private String price;
     private int XS;
     private int S;
     private int M;
     private int L;
     private int XL;
 
-    public Product(){};
-    public Product(Long id, String name, String material, String type, int xS, int s, int m, int l, int xL) {
+    public Product(Long id, String name, String material, String type, String description, String price, int xs, int s,
+            int m, int l, int xl) {
         this.id = id;
         this.name = name;
         this.material = material;
         this.type = type;
-        XS = xS;
+        this.description = description;
+        this.price = price;
+        XS = xs;
         S = s;
         M = m;
         L = l;
-        XL = xL;
+        XL = xl;
+    }
+    public Product(){};
+    public String getPrice() {
+        return price;
+    }
+    public void setPrice(String price) {
+        this.price = price;
     }
     public Long getId() {
         return id;
@@ -84,6 +95,12 @@ public class Product {
     }
     public void setXL(int xL) {
         XL = xL;
+    }
+    public String getDescription() {
+        return description;
+    }
+    public void setDescription(String description) {
+        this.description = description;
     }
     @Override
     public int hashCode() {

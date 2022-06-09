@@ -20,7 +20,7 @@ public class RouterController implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         ResourceResolver resolver = new ReactResourceResolver();
-        registry.addResourceHandler("/store/**")
+        registry.addResourceHandler("/**")
                 .resourceChain(true)
                 .addResolver(resolver);
     }

@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export default axios.create({
-    baseURL: "https://thawing-sea-63783.herokuapp.com/api"
+    baseURL: "https://localhost:8080/api"
 });

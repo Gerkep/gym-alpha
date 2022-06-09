@@ -4,10 +4,16 @@ import "../style/main-store.css";
 import "../style/drop.css";
 import StoreFooter from "../components/StoreFooter";
 import SizeCheckbox from "../components/SizeCheckbox";
+import store from "../../apis/store";
   
 class DropPage extends React.Component {
-    state = {xs_disabled: false, s_disabled: true, m_disabled: false, l_disabled: false, xl_disabled: false}
+    state = {xs_disabled: false, s_disabled: true, m_disabled: false, l_disabled: false, xl_disabled: false, product: {}}
 
+    componentDidMount = async () => {
+        const fetchedProduct = await store.get('/products/1').then((result) => result.data);
+        this.setState({product: fetchedProduct});
+    }
+    fet
     renderCheckboxes = () => {
         return(
             <div className="sizes-container">
@@ -31,15 +37,15 @@ class DropPage extends React.Component {
                         <div className="merch-img"></div>
                     </div>
                     <div className="product-about">
-                        <h1 className="product-name">OG OVERSIZE TEE</h1>
-                        <h2 className="product-family">Classic</h2>
+                        <h1 className="product-name">{this.state.product.name}</h1>
+                        <h2 className="product-family">{this.state.product.type}</h2>
                         {this.renderCheckboxes()}
-                        <div className="product-description">Legendary OG Oversize Tee. The genesis of Gym Alpha merch. Thanks to black color it will be a great fit to everything in your wardrobe! You will wear it proudly.</div>
+                        <div className="product-description">{this.state.product.description}</div>
                         <div className="product-badges">
                         <div className="product-badge"><div className="badge-img quality"></div><p className="badge-name">Quality guarantee</p></div>
-                        <div className="product-badge"><div className="badge-img fabric"></div><p className="badge-name">Fabric: 100% cotton</p></div>
+                        <div className="product-badge"><div className="badge-img fabric"></div><p className="badge-name">Fabric: {this.state.product.material}</p></div>
                         </div>
-                        <div className="purchase-details"><p className="product-price">$39.00</p><p className="supply-left">*Only 12 left!</p></div>
+                        <div className="purchase-details"><p className="product-price">${this.state.product.price}</p><p className="supply-left">*Only {this.state.product.l} left!</p></div>
                         <button className="purchase-btn">SWEEP!</button>
                     </div>
                 </div>
