@@ -5,6 +5,16 @@ import "../style/order.css";
 import StoreFooter from "../components/StoreFooter";
 import { Field, reduxForm } from 'redux-form';
 import history from "../../history";
+import { 
+    orderCity, 
+    orderCountry, 
+    orderEmail, 
+    orderFirstName, 
+    orderLastName, 
+    orderTelephone, 
+    orderStreetAndNumber} 
+from "../../actions";
+import { connect } from "react-redux";
   
 class OrderPage extends React.Component {
 
@@ -28,8 +38,15 @@ class OrderPage extends React.Component {
         )
     }
 
-    onSubmit(formValues) {
-       console.log(formValues);
+    onSubmit = (formValues) => {
+       this.props.orderCity(formValues.City);
+       this.props.orderCountry(formValues.Country);
+       this.props.orderCountry(formValues.FirstName);
+       this.props.orderCountry(formValues.LastName);
+       this.props.orderCountry(formValues.Telephone);
+       this.props.orderCountry(formValues.Email);
+       this.props.orderCountry(formValues.StreetAndNumber);
+       this.props.orderCountry(formValues.PostalCode);
        history.push("/store/payment")
     }
     render(){
@@ -98,7 +115,17 @@ const validate = (formValues) => {
     return errors;
 }
 
-export default reduxForm({
+const formWrapped = reduxForm({
     form: 'order',
     validate
 })(OrderPage);
+
+export default connect(null, {    
+    orderCity, 
+    orderCountry, 
+    orderEmail, 
+    orderFirstName, 
+    orderLastName, 
+    orderTelephone, 
+    orderStreetAndNumber})
+(formWrapped);
