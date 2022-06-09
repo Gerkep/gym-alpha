@@ -1,47 +1,54 @@
-module.exports = stars
+const log = require('npmlog')
+const fetch = require('npm-registry-fetch')
 
-stars.usage = 'npm stars [<user>]'
+const getIdentity = require('./utils/get-identity.js')
 
-var npm = require('./npm.js')
-var log = require('npmlog')
-var mapToRegistry = require('./utils/map-to-registry.js')
-var output = require('./utils/output.js')
+const BaseCommand = require('./base-command.js')
+class Stars extends BaseCommand {
+  /* istanbul ignore next - see test/lib/load-all-commands.js */
+  static get description () {
+    return 'View packages marked as favorites'
+  }
 
-function stars (args, cb) {
-  npm.commands.whoami([], true, function (er, username) {
-    var name = args.length === 1 ? args[0] : username
+  /* istanbul ignore next - see test/lib/load-all-commands.js */
+  static get name () {
+    return 'stars'
+  }
 
-    if (er) {
-      if (er.code === 'ENEEDAUTH' && !name) {
-        var needAuth = new Error("'npm stars' on your own user account requires auth")
-        needAuth.code = 'ENEEDAUTH'
-        return cb(needAuth)
-      }
+  /* istanbul ignore next - see test/lib/load-all-commands.js */
+  static get usage () {
+    return ['[<user>]']
+  }
 
-      if (er.code !== 'ENEEDAUTH') return cb(er)
-    }
+  /* istanbul ignore next - see test/lib/load-all-commands.js */
+  static get params () {
+    return [
+      'registry',
+    ]
+  }
 
-    mapToRegistry('', npm.config, function (er, uri, auth) {
-      if (er) return cb(er)
-
-      var params = {
-        username: name,
-        auth: auth
-      }
-      npm.registry.stars(uri, params, showstars)
+  exec (args, cb) {
+    this.stars(args).then(() => cb()).catch(er => {
+      if (er.code === 'ENEEDAUTH')
+        log.warn('stars', 'auth is required to look up your username')
+      cb(er)
     })
-  })
+  }
 
-  function showstars (er, data) {
-    if (er) return cb(er)
+  async stars ([user]) {
+    if (!user)
+      user = await getIdentity(this.npm, this.npm.flatOptions)
 
-    if (data.rows.length === 0) {
-      log.warn('stars', 'user has not starred any packages.')
-    } else {
-      data.rows.forEach(function (a) {
-        output(a.value)
-      })
-    }
-    cb()
+    const { rows } = await fetch.json('/-/_view/starredByUser', {
+      ...this.npm.flatOptions,
+      query: { key: `"${user}"` },
+    })
+
+    if (rows.length === 0)
+      log.warn('stars', 'user has not starred any packages')
+
+    for (const row of rows)
+      this.npm.output(row.value)
   }
 }
+module.exports = Stars
