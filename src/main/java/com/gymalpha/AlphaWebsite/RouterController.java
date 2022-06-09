@@ -20,7 +20,7 @@ public class RouterController implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         ResourceResolver resolver = new ReactResourceResolver();
-        registry.addResourceHandler("/**")
+        registry.addResourceHandler("/store/**")
                 .resourceChain(true)
                 .addResolver(resolver);
     }
@@ -30,9 +30,6 @@ public class RouterController implements WebMvcConfigurer {
         // example REACT_DIR/index.html
         private static final String REACT_DIR = "/static/";
 
-        // this is directory inside REACT_DIR for react static files
-        // example REACT_DIR/REACT_STATIC_DIR/js/
-        // example REACT_DIR/REACT_STATIC_DIR/css/
         private static final String REACT_STATIC_DIR = "static";
 
         private Resource index = new ClassPathResource(REACT_DIR + "index.html");
