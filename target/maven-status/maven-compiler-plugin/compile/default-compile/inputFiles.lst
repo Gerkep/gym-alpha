@@ -3,6 +3,8 @@
 /Users/piotrgerke/Workspaces/VSCode/GymAlpha/gym-alpha/src/main/java/com/gymalpha/AlphaWebsite/model/Product.java
 /Users/piotrgerke/Workspaces/VSCode/GymAlpha/gym-alpha/src/main/java/com/gymalpha/AlphaWebsite/controller/OrderController.java
 /Users/piotrgerke/Workspaces/VSCode/GymAlpha/gym-alpha/src/main/java/com/gymalpha/AlphaWebsite/model/Order.java
+/Users/piotrgerke/Workspaces/VSCode/GymAlpha/gym-alpha/src/main/java/com/gymalpha/AlphaWebsite/client/StripeClient.java
 /Users/piotrgerke/Workspaces/VSCode/GymAlpha/gym-alpha/src/main/java/com/gymalpha/AlphaWebsite/repo/ProductRepository.java
 /Users/piotrgerke/Workspaces/VSCode/GymAlpha/gym-alpha/src/main/java/com/gymalpha/AlphaWebsite/AlphaWebsiteApplication.java
 /Users/piotrgerke/Workspaces/VSCode/GymAlpha/gym-alpha/src/main/java/com/gymalpha/AlphaWebsite/controller/ProductController.java
+/Users/piotrgerke/Workspaces/VSCode/GymAlpha/gym-alpha/src/main/java/com/gymalpha/AlphaWebsite/controller/StripeGatewayController.java

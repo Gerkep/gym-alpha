@@ -11,6 +11,19 @@ class DropPage extends React.Component {
     state = {xs_disabled: false, s_disabled: true, m_disabled: false, l_disabled: false, xl_disabled: false, products: []}
 
     componentDidMount = async () => {
+        // const product = {
+        //         "name": "OG OVERSIZE TEE",
+        //         "material": "100% cotton",
+        //         "type": "Classic",
+        //         "description": "Legendary OG Oversize Tee made for pioneers. The genesis of Gym Alpha merch. There are only 20 of these. Wear it proudly.",
+        //         "price": "???",
+        //         "xs": 0,
+        //         "s": 0,
+        //         "m": 0,
+        //         "l": 14,
+        //         "xl": 0
+        //      }
+        // await store.post('/products/add', product);
         const fetchedProduct = await store.get('/products/list').then((result) => result.data);
         this.setState({products: fetchedProduct});
     }
@@ -26,7 +39,7 @@ class DropPage extends React.Component {
         )
     }
     addToOrder = () => {
-        
+        alert("Out of stock. The sewing factory rugged us, delivering low quality product. We value quality and therefore we won't sell any product until we build our own sewing room and produce best quality merch. We are really sorry for this inconvinience...")
     }
     renderProduct = () => {
         const product = this.state.products.map((product) => {
@@ -42,7 +55,7 @@ class DropPage extends React.Component {
                     <div className="product-badge"><div className="badge-img fabric"></div><p className="badge-name">Fabric: {product.material}</p></div>
                     </div>
                     <div className="purchase-details"><p className="product-price">${product.price}</p><p className="supply-left">*Only {product.l} left!</p></div>
-                    <Link  to="/store/order"><button onClick={this.addToOrder} className="purchase-btn">SWEEP!</button></Link>
+                    <Link  to="/store/drop"><button onClick={this.addToOrder} className="purchase-btn">SWEEP!</button></Link>
                 </div>
                 )
             }
@@ -58,7 +71,7 @@ class DropPage extends React.Component {
                 <div className="drop-container">
                     <div className="title-product">
                         <h1 className="header-store">DROP</h1>
-                        <h3 className="drop-counter">Ends in: <b>01d 23h 21m 23s</b></h3>
+                        <h3 className="drop-counter">Ends in: <b>00d 00h 00m 00s</b></h3>
                         <div className="merch-img"></div>
                     </div>
                     {this.renderProduct()}

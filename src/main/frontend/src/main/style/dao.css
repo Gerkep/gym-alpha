@@ -3,9 +3,10 @@
 }
 .coming-soon{
     text-align: center;
-    font-size: 6vw;
-    margin-top: 10vh;
-    font-weight: 300;
+    margin-top: 15vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 7vw;
 }
 
 @media screen and (min-width: 1200px) {

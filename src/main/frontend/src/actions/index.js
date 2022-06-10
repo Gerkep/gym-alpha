@@ -5,6 +5,7 @@ export const selectSize = (size) => {
     };
 };
 export const orderFirstName = (firstName) => {
+    console.log(firstName)
     return {
         type: 'ORDER_FIRSTNAME',
         payload: firstName

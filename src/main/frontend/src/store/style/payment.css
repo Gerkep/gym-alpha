@@ -28,7 +28,22 @@
 .shipping-cost{margin-left: 5vw; margin-top: 7vw; font-size: 4vw; color: rgb(101, 101, 101);}
 .merch-cost{margin-left: 5vw; margin-top: 1vw; font-size: 4vw; color: rgb(101, 101, 101);}
 .total-cost{margin-left: 5vw; margin-top: 3vw; font-size: 6vw;}
-
+.paypal-container{
+    width: 70vw;
+    margin: 5vw 0 0 5vw;
+}
+.stripe-paybtn{
+    width: 70vw;
+    height: 15vw;
+    margin: 5vw 25vw 5vw 5vw;
+    font-size: 4vw;
+    font-weight: 900;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(81, 0, 255);
+    color: white;
+    cursor: pointer;
+} 
 @media screen and (min-width: 1200px) {
 
     .payment-grid {  display: grid;
@@ -42,11 +57,12 @@
       
     .payment-products { grid-area: payment-products; display: flex; flex-wrap: wrap; align-items: center;}
     .payment-product{
-        width: 16vw;
-        height: 16vw;
+        width: 40vw;
+        height: 40vw;
+        background-repeat: no-repeat;
         background-image: url("../images/oversizetee.png");
         background-size: contain;
-        margin:  0 0 0 2.5vw;
+        margin:  0 0 0 10vw;
         border-radius: 20px;
     }
     .payment-summary { 
@@ -83,5 +99,19 @@
     .shipping-cost{margin-left: 2.5vw; margin-top: 2.5vw; font-size: 1.1vw; color: rgb(101, 101, 101);}
     .merch-cost{margin-left: 2.5vw; margin-top: 0.5vw; font-size: 1.1vw; color: rgb(101, 101, 101);}
     .total-cost{margin-left: 2.5vw; margin-top: 1vw; font-size: 1.5vw;}
-      
+    .paypal-container{
+        width: 20vw;
+        margin: 0.5vw 0 0 2.5vw;
+    }
+    .stripe-paybtn{
+        width: 20vw;
+        height: 4vw;
+        margin: 1vw 20vw 1vw 2.5vw;
+        font-size: 1.5vw;
+        font-weight: 900;
+        border-radius: 20px;
+        border: none;
+        background-color: rgb(81, 0, 255);
+        color: white;
+    } 
 }

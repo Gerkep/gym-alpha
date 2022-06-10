@@ -14,7 +14,7 @@ class ThankYouPage extends React.Component {
                 <StoreNavbar />
                 <div className="thanks-container">
                     <h1 className="thanks">YOUR MERCH<br/> IS ON ITS WAY!</h1>
-                    <Link className="main-page-link">Main Page</Link>
+                    <Link to="/" className="main-page-link">Main Page</Link>
                 </div>
                 <StoreFooter />
             </div>

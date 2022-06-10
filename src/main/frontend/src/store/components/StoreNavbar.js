@@ -67,17 +67,17 @@ class StoreNavbar extends React.Component{
                 </div>
                 <div className="menu menu-store">
                     <div className="mobile-menu-items mobile-menu-items-store">
-                            <Link className="mobile-menu-link mobile-menu-link-store" id="store-link" to="/store/drop">DROPS</Link>
-                            <a className="mobile-menu-link mobile-menu-link-store" id="store-link" href="">CLOTHES</a>
-                            <Link className="mobile-menu-link mobile-menu-link-store" id="store-link" to="/store/drop">ACCESORIES</Link>
+                            <Link className="mobile-menu-link mobile-menu-link-store" id="store-link" to="/store/coming-soon">DROPS</Link>
+                            <Link className="mobile-menu-link mobile-menu-link-store" id="store-link" to="/store/coming-soon">CLOTHES</Link>
+                            <Link className="mobile-menu-link mobile-menu-link-store" id="store-link" to="/store/coming-soon">ACCESORIES</Link>
                     </div>
                 </div>
                 <div className="navbar-links navbar-links-store"> 
-                    <a href="" className="cart-link desktop"></a>
-                    <input className="searchbar desktop" placeholder="Search"></input>
-                    <Link className="navbar-desktop-link navbar-desktop-link-store" id="store-link" to="/store/drop">ACCESORIES</Link>
-                    <a className="navbar-desktop-link navbar-desktop-link-store" id="store-link" href="">CLOTHES</a>
-                    <Link className="navbar-desktop-link navbar-desktop-link-store" id="store-link" to="/store/drop"><b>DROPS</b></Link>
+                    <a href="" onClick={() => alert("Online store is in beta version for now. It will be fully functional once we have our own sewing room. We are working on it!")} className="cart-link desktop"></a>
+                    <input className="searchbar desktop" onClick={() => alert("Online store is in beta version for now. It will be fully functional once we have our own sewing room. We are working on it!")} placeholder="Search"></input>
+                    <Link className="navbar-desktop-link navbar-desktop-link-store" id="store-link" to="/store/coming-soon">ACCESORIES</Link>
+                    <Link className="navbar-desktop-link navbar-desktop-link-store" id="store-link" to="/store/coming-soon">CLOTHES</Link>
+                    <Link className="navbar-desktop-link navbar-desktop-link-store" id="store-link" to="/store/coming-soon"><b>DROPS</b></Link>
                 </div>
             </div>
         )

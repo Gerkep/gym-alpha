@@ -97,9 +97,7 @@
     margin-left: 4vw;
 }
 .purchase-btn{
-    margin: 2vw 0 15vw 4vw !important;
-    width: 75vw !important;
-    height: 17vw;
+    margin: 2vw 0 15vw 4vw;
     padding: 5vw 25vw 5vw 25vw;
     border-radius: 18px;
     border: none;
@@ -198,5 +196,6 @@
         font-size: 2.5vw;
         margin-bottom: 2vw;
         cursor: pointer;
+        padding: 0;
     }
 }

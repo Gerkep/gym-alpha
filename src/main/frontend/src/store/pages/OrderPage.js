@@ -12,7 +12,9 @@ import {
     orderFirstName, 
     orderLastName, 
     orderTelephone, 
-    orderStreetAndNumber} 
+    orderStreetAndNumber,
+    orderPostalCode
+} 
 from "../../actions";
 import { connect } from "react-redux";
   
@@ -41,12 +43,12 @@ class OrderPage extends React.Component {
     onSubmit = (formValues) => {
        this.props.orderCity(formValues.City);
        this.props.orderCountry(formValues.Country);
-       this.props.orderCountry(formValues.FirstName);
-       this.props.orderCountry(formValues.LastName);
-       this.props.orderCountry(formValues.Telephone);
-       this.props.orderCountry(formValues.Email);
-       this.props.orderCountry(formValues.StreetAndNumber);
-       this.props.orderCountry(formValues.PostalCode);
+       this.props.orderEmail(formValues.FirstName);
+       this.props.orderLastName(formValues.LastName);
+       this.props.orderTelephone(formValues.Telephone);
+       this.props.orderEmail(formValues.Email);
+       this.props.orderStreetAndNumber(formValues.StreetAndNumber);
+       this.props.orderPostalCode(formValues.PostalCode);
        history.push("/store/payment")
     }
     render(){
@@ -114,18 +116,22 @@ const validate = (formValues) => {
     }
     return errors;
 }
-
+const mapStateToProps = state => {
+    return {city: state.city, country: state.country, email: state.email}
+}
 const formWrapped = reduxForm({
     form: 'order',
     validate
 })(OrderPage);
 
-export default connect(null, {    
+export default connect(mapStateToProps, {    
     orderCity, 
     orderCountry, 
     orderEmail, 
     orderFirstName, 
     orderLastName, 
     orderTelephone, 
-    orderStreetAndNumber})
+    orderStreetAndNumber,
+    orderPostalCode
+})
 (formWrapped);
