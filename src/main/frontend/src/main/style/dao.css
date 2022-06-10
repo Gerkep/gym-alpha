@@ -1,0 +1,16 @@
+.dao-page{
+    height: 10vh;
+}
+.coming-soon{
+    text-align: center;
+    margin-top: 15vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 7vw;
+}
+
+@media screen and (min-width: 1200px) {
+    .coming-soon{
+        font-size: 4vw;
+    }
+}
