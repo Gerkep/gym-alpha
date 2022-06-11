@@ -1,70 +1,92 @@
 import { combineReducers } from "redux";
 import { reducer as formReducer } from 'redux-form';
 
+const initialState = {
+    cart:[],
+    firstName: '',
+    lastName: '',
+    telephone: '',
+    email: '',
+    streetAndNumber: '',
+    postalCode: '',
+    city: '',
+    country: '',
+    paid: false,
+    totalPrice: 0
+}
 const sizeReducer = (selectedSize = null, action) => {
     if (action.type === 'SIZE_SELECTED'){
         return action.payload;
     }
     return selectedSize;
 }
-const firstNameReducer = (firstName = null, action) => {
-    if (action.type === 'ORDER_FIRSTNAME'){
-        return action.payload;
+const orderReducer = (state = initialState, action) => {
+    switch (action.type){
+            case 'ADD_PRICE' :
+                return { 
+                    ...state,
+                    totalPrice: action.payload
+            }
+            case 'ITEM_ADDED' :
+                return { 
+                    ...state,
+                    cart: [...state.cart, action.payload]
+            }
+            case 'ORDER_PURCHASED' :
+                return { 
+                    ...state,
+                    paid: action.payload
+            }
+            case 'ORDER_FIRSTNAME' :
+                return { 
+                    ...state,
+                    firstName: action.payload
+                }
+            case 'ORDER_LASTNAME' :
+                return { 
+                    ...state,
+                    lastName: action.payload
+            }
+            case 'ORDER_TELEPHONE' :
+                return { 
+                    ...state,
+                    telephone: action.payload
+            }
+            case 'ORDER_EMAIL' :
+                return { 
+                    ...state,
+                    email: action.payload
+            }
+            case 'ORDER_STREETANDNUMBER' :
+                return { 
+                    ...state,
+                    streetAndNumber: action.payload
+            }
+            case 'ORDER_POSTALCODE' :
+                return { 
+                    ...state,
+                    postalCode: action.payload
+            }
+            case 'ORDER_CITY' :
+                return { 
+                    ...state,
+                    city: action.payload
+            }
+            case 'ORDER_COUNTRY' :
+                return { 
+                    ...state,
+                    country: action.payload
+            }
+            
+
+        default:
+            return state
     }
-    return firstName;
 }
-const lastNameReducer = (lastName = null, action) => {
-    if (action.type === 'ORDER_LASTNAME'){
-        return action.payload;
-    }
-    return lastName;
-}
-const telephoneReducer = (telephone = null, action) => {
-    if (action.type === 'ORDER_TELEPHONE'){
-        return action.payload;
-    }
-    return telephone;
-}
-const emailReducer = (email = null, action) => {
-    if (action.type === 'ORDER_EMAIL'){
-        return action.payload;
-    }
-    return email;
-}
-const streetAndNumberReducer = (streetAndNumber = null, action) => {
-    if (action.type === 'ORDER_STREETANDNUMBER'){
-        return action.payload;
-    }
-    return streetAndNumber;
-}
-const postalCodeReducer = (postalCode = null, action) => {
-    if (action.type === 'ORDER_POSTALCODE'){
-        return action.payload;
-    }
-    return postalCode;
-}
-const cityReducer = (city = null, action) => {
-    if (action.type === 'ORDER_CITY'){
-        return action.payload;
-    }
-    return city;
-}
-const countryReducer = (country = null, action) => {
-    if (action.type === 'ORDER_COUNTRY'){
-        return action.payload;
-    }
-    return country;
-}
+
 
 export default combineReducers({
    size: sizeReducer,
    form: formReducer,
-   firstName: firstNameReducer,
-   lastName: lastNameReducer,
-   telephone: telephoneReducer,
-   email: emailReducer,
-   streetAndNumber: streetAndNumberReducer,
-   postalCode: postalCodeReducer,
-   city: cityReducer,
-   country: countryReducer,
+   orderInfo: orderReducer,
 });

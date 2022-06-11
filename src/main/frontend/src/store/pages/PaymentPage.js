@@ -8,29 +8,25 @@ import Stripe from "react-stripe-checkout";
 import history from "../../history";
 import store from "../../apis/store";
 import { connect } from "react-redux";
+import { orderPaid } from "../../actions";
   
-class PaymentPage extends React.Component {
-    state = {products: {}}
-    componentDidMount = () => {
-        const product = {
-            description: "Gym Alpha Merch",
-            price: 48.99
-        }
-        this.setState({products: product});
+const PaymentPage = (props) => {
+    const product = {
+        description: "Gym Alpha Merch",
+        price: props.orderInfo.totalPrice
     }
-    handleToken = async (token) => {
+    const handleToken = async (token) => {
         console.log(token);
         await store.post("/stripe/payment/charge", "", { headers: {
           token: token.id,
           amount: 500,
         },}).then(() => {
+            props.orderPaid(true);
            history.push("/store/thank-you")
            }).catch((error) => {
            alert(error);
            });
     }
-
-    render(){
         return (
             <div className="payment-page">
                 <StoreNavbar />
@@ -49,7 +45,7 @@ class PaymentPage extends React.Component {
                         <p className="merch-cost">Mrch cost: $39.00</p>
                         <p className="total-cost">Total: $48.99</p>
                         <div className="paypal-container">
-                            <PaypalCheckoutButton product={this.state.products}/>
+                            <PaypalCheckoutButton product={product}/>
                         </div>
                         <Stripe
                             image="http://drive.google.com/uc?export=view&id=1KfTb7h5yln1omHlJ3eHDX-A0LL-_LE3v" 
@@ -57,8 +53,8 @@ class PaymentPage extends React.Component {
                             name="GYM ALPHA" 
                             description="Handled by Stripe." 
                             stripeKey="pk_test_51L90anDdmwDcjUrKGK935LoxR6popO2lxjsbPQ1Q0JNk9pkICAfmhZnmZetf1ggDJZ1efOT1WHlgBK62tK44iTPB00ttIu41jT" 
-                            token={this.handleToken} 
-                            email={this.props.email}>
+                            token={handleToken} 
+                            email={props.email}>
                                 <button className="stripe-paybtn">Pay With Card</button>
                             </Stripe>
                         {/* <button>Ethereum</button> */}
@@ -68,9 +64,8 @@ class PaymentPage extends React.Component {
             </div>
 
         )
-    }
 }
 const mapStateToProps = (state) => {
-    return {email: state.email};
+    return {email: state.email, orderInfo: state.orderInfo};
 };
-export default connect(mapStateToProps)(PaymentPage);
+export default connect(mapStateToProps, {orderPaid})(PaymentPage);

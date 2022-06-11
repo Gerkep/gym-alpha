@@ -4,8 +4,25 @@ export const selectSize = (size) => {
         payload: size
     };
 };
+export const addToCart = (item) => {
+    return {
+        type: 'ITEM_ADDED',
+        payload: item
+    };
+};
+export const orderPaid = (isPaid) => {
+    return {
+        type: 'ORDER_PURCHASED',
+        payload: isPaid
+    };
+};
+export const addToTotal = (value) => {
+    return {
+        type: 'ADD_PRICE',
+        payload: value
+    }
+}
 export const orderFirstName = (firstName) => {
-    console.log(firstName)
     return {
         type: 'ORDER_FIRSTNAME',
         payload: firstName

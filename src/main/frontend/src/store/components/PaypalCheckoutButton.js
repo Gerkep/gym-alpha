@@ -1,14 +1,14 @@
 import { PayPalButtons } from "@paypal/react-paypal-js";
 import actions from "redux-form/lib/actions";
 import history from "../../history";
+import { orderPaid } from "../../actions";
+import { connect } from "react-redux";
 
 const PaypalCheckoutButton = (props) => {
     const {product} = props;
 
     const handleApprove = (orderID) => {
-        //call backend with order
-
-        // if response is succesful update paid to true
+        props.orderPaid(true);
         history.push("thank-you")
     }
     return(
@@ -46,4 +46,4 @@ const PaypalCheckoutButton = (props) => {
     )
 }
 
-export default PaypalCheckoutButton;
+export default connect(null, {orderPaid})(PaypalCheckoutButton);

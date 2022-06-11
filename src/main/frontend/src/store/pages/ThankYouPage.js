@@ -5,9 +5,13 @@ import "../style/thanks.css";
 import StoreFooter from "../components/StoreFooter";
 import { Link } from "react-router-dom";
 import history from "../../history";
+import { connect } from 'react-redux';
   
 class ThankYouPage extends React.Component {
 
+    componentDidMount() {
+        console.log(this.props.orderInfo)
+    }
     render(){
         return (
             <div className="thankyou-page">
@@ -22,4 +26,7 @@ class ThankYouPage extends React.Component {
         )
     }
 }
-export default ThankYouPage;
+const mapStateToProps = (state) => {
+    return {orderInfo: state.orderInfo}
+}
+export default connect(mapStateToProps)(ThankYouPage);

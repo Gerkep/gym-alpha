@@ -4,6 +4,7 @@ import "../style/main-store.css";
 import "../style/order.css";
 import StoreFooter from "../components/StoreFooter";
 import { Field, reduxForm } from 'redux-form';
+import store from "../../apis/store";
 import history from "../../history";
 import { 
     orderCity, 
@@ -19,7 +20,6 @@ from "../../actions";
 import { connect } from "react-redux";
   
 class OrderPage extends React.Component {
-
     renderError = ({error, touched}) => {
         if (touched && error){
             return (
@@ -40,15 +40,29 @@ class OrderPage extends React.Component {
         )
     }
 
-    onSubmit = (formValues) => {
+    onSubmit = async (formValues) => {
+        const order = {
+            "city": formValues.City,
+            "country": formValues.Country,
+            "mail": formValues.Email,
+            "firstName": formValues.FirstName,
+            "lastName": formValues.LastName,
+            "telephoneNumber": formValues.Telephone,
+            "streetAndNumber": formValues.StreetAndNumber,
+            "postalCode": formValues.PostalCode,
+            "items": this.props.orderInfo.cart,
+            "paid": this.props.orderInfo.paid
+        }
        this.props.orderCity(formValues.City);
        this.props.orderCountry(formValues.Country);
        this.props.orderEmail(formValues.FirstName);
+       this.props.orderFirstName(formValues.FirstName);
        this.props.orderLastName(formValues.LastName);
        this.props.orderTelephone(formValues.Telephone);
        this.props.orderEmail(formValues.Email);
        this.props.orderStreetAndNumber(formValues.StreetAndNumber);
        this.props.orderPostalCode(formValues.PostalCode);
+       await store.post("/finalizeOrder", order);
        history.push("/store/payment")
     }
     render(){
@@ -116,8 +130,8 @@ const validate = (formValues) => {
     }
     return errors;
 }
-const mapStateToProps = state => {
-    return {city: state.city, country: state.country, email: state.email}
+const mapStateToProps = (state) => {
+    return {orderInfo: state.orderInfo}
 }
 const formWrapped = reduxForm({
     form: 'order',

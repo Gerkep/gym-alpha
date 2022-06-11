@@ -23,14 +23,12 @@ public class Order {
     private String streetAndNumber;
     private String postalCode;
     private String city;
-    private String items;
+    private String[] items;
+    private Boolean paid;
 
-    public Order() {
-    };
-
-    public Order(String country, String mail, String firstName, String lastName, String telephoneNumber,
-            String streetAndNumber, String postalCode, String city, String items) {
-        this.city = city;
+    public Order(Long id, String country, String mail, String firstName, String lastName, String telephoneNumber,
+            String streetAndNumber, String postalCode, String city, String[] items, Boolean paid) {
+        this.id = id;
         this.country = country;
         this.mail = mail;
         this.firstName = firstName;
@@ -38,7 +36,12 @@ public class Order {
         this.telephoneNumber = telephoneNumber;
         this.streetAndNumber = streetAndNumber;
         this.postalCode = postalCode;
+        this.city = city;
         this.items = items;
+        this.paid = paid;
+    }
+
+    public Order() {
     };
 
     @Override
@@ -57,12 +60,13 @@ public class Order {
                 Objects.equals(city, order.city) &&
                 Objects.equals(country, order.country) &&
                 Objects.equals(items, order.items) &&
+                Objects.equals(paid, order.paid) &&
                 Objects.equals(mail, order.mail);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, firstName, lastName, country, mail, telephoneNumber, streetAndNumber, postalCode, city, items);
+        return Objects.hash(id, firstName, lastName, country, mail, telephoneNumber, streetAndNumber, postalCode, city, items, paid);
     }
 
     public Long getId() {
@@ -137,14 +141,21 @@ public class Order {
         this.city = city;
     }
 
-    public String getItems() {
+    public String[] getItems() {
         return items;
     }
 
-    public void setItems(String items) {
+    public void setItems(String[] items) {
         this.items = items;
     }
 
+    public Boolean getPaid() {
+        return paid;
+    }
+
+    public void setPaid(Boolean paid) {
+        this.paid = paid;
+    }
     @Override
     public String toString() {
         return "Employee{" +
@@ -158,6 +169,7 @@ public class Order {
                 ", telephoneNumber='" + telephoneNumber + '\'' +
                 ", mail='" + mail + '\'' +
                 ", items='" + items + '\'' +
+                ", paid='" + paid + '\'' +
                 '}';
     }
 
