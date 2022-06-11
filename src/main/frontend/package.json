@@ -35,7 +35,7 @@
     "eject": "react-scripts eject",
     "sitemap": "babel-node ./sitemap/sitemap-generator.js"
   },
-  "proxy": "http://localhost:8080",
+  "proxy": "https://www.gymalpha.app",
   "eslintConfig": {
     "extends": [
       "react-app",
