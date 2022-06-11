@@ -4,11 +4,12 @@ import "../style/main-store.css";
 import "../style/drop.css";
 import StoreFooter from "../components/StoreFooter";
 import SizeCheckbox from "../components/SizeCheckbox";
+import Countdown from "../../main/components/Countdown";
 import store from "../../apis/store";
 import { Link } from "react-router-dom";
   
 class DropPage extends React.Component {
-    state = {xs_disabled: false, s_disabled: true, m_disabled: false, l_disabled: false, xl_disabled: false, products: []}
+    state = {xs_disabled: false, s_disabled: true, m_disabled: false, l_disabled: false, xl_disabled: false, products: [], timeout: 0}
 
     componentDidMount = async () => {
         // const product = {
@@ -24,8 +25,11 @@ class DropPage extends React.Component {
         //         "xl": 0
         //      }
         // await store.post('/products/add', product);
+        const DAYS_IN_MS = 0 * 24 * 60 * 60 * 1000;
+        const NOW_IN_MS = new Date().getTime();
+        const endTime = NOW_IN_MS + DAYS_IN_MS;
         const fetchedProduct = await store.get('/products/list').then((result) => result.data);
-        this.setState({products: fetchedProduct});
+        this.setState({products: fetchedProduct, timeout: endTime});
     }
     renderCheckboxes = () => {
         return(
@@ -43,7 +47,7 @@ class DropPage extends React.Component {
     }
     renderProduct = () => {
         const product = this.state.products.map((product) => {
-            if(product.id===1){
+            if(product.id===1){//change to 2
                 return(
                     <div className="product-about" key={product.id}>
                     <h1 className="product-name">{product.name}</h1>
@@ -71,7 +75,7 @@ class DropPage extends React.Component {
                 <div className="drop-container">
                     <div className="title-product">
                         <h1 className="header-store">DROP</h1>
-                        <h3 className="drop-counter">Ends in: <b>00d 00h 00m 00s</b></h3>
+                        <h3 className="drop-counter"><Countdown targetDate={this.state.timeout}></Countdown></h3>
                         <div className="merch-img"></div>
                     </div>
                     {this.renderProduct()}
