@@ -59,7 +59,8 @@
     position: relative;
     border-radius: 25px;
     color: white;
-    border: 0.6vw solid rgb(255, 255, 255);
+    border: none;
+    box-shadow: 3px 2px 15px rgb(0, 102, 255);
   }
 
   .timeline-container-header{
@@ -91,7 +92,7 @@
       width: 20vw;
       transition: all 1.2s ease;
       position: absolute;
-      margin-top: 4vw;
+      margin-top: 3vw;
       display: flex !important;
       flex-wrap: wrap !important;
       justify-content: center;
@@ -143,6 +144,7 @@
     .content {
       border: none;
       padding: 0;
+      box-shadow: none;
     }
   
     .timeline-container-header{

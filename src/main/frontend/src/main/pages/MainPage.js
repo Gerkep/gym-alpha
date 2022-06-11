@@ -59,17 +59,18 @@ class MainPage extends React.Component {
                 <Navbar/>
                 <div className="dim-background"></div>
                 <div className="intro-desktop">
-                    <h1 className="main-header appearing" id="intro-header">UNLEASH THE POWER<br className="desktop"/> OF NFT <span className="underlined">COMMUNITY.</span></h1>
+                    <h1 className="main-header appearing" id="intro-header">FITNESS INDUSTRY<br className="desktop"/> <span className="underlined">GAME</span> CHANGER.</h1>
                     <p className="about desktop appearing">Fitness gamification is closer than ever before.</p>
                     {/* <Link className="button appearing mint-btn" to="/mint">MINT</Link> */}
-                    <a className="button appearing mint-btn" href="https://discord.gg/725SakGDPU">JOIN DISCORD</a>
+                    <a className="button appearing mint-btn" href="https://forms.gle/KBn1UtVxs8nkVK739">CLAIM WHITELIST!</a>
                     <div className="image-dim-bottom"></div>
                 </div>
 
                 <div className="main-image"><div className="image-dim-top"></div><div className="image-dim-left"></div></div>
                 <h1 className="next-header mobile"><span className="underlined">ABOUT</span></h1>
-                <p className="about mobile">Next gen fitness brand by You redefining how the modern brands look like and bringing gamification to the fitness industry!</p>
-                <h1 className="next-header appearing" id="membership-header">MEMBERSHIP <span className="underlined">BENEFITS</span></h1>
+                <p className="about mobile">Gym Alpha is a next gen fitness brand by created by gym community. <br/>It's goal is to redefine how the modern brands look like and bring gamification to the fitness industry!</p>
+                <h1 className="next-header appearing desktop" id="membership-header">HOW YOU BENE<span className="underlined">FIT?</span></h1>
+                <h1 className="next-header appearing mobile" id="membership-header">BENE<span className="underlined">FITS</span></h1>
                 <div className="benefits-container">
                     <HolderBenefit image={dollarPic} header="Staking & Dividends" text="As a member you will be passively earning governance token. Rarest NFTs will give extra dividends."/>
                     <HolderBenefit image={giftPic} header="Gifts" text="Once the online store is ready, we will begin sending gifts to randomly selected holders."/>

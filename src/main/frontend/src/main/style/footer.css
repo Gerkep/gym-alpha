@@ -61,7 +61,7 @@
     height: 8vw;
 }
 .footer-media-icon{
-    margin: 0 5vw 0 5vw;
+    margin: 0 5vw 0 5vw !important;
     width: 8vw;
     height: 8vw;
 }

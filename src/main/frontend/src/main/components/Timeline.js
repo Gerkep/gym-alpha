@@ -80,7 +80,8 @@ class Timeline extends React.Component {
                     <ul className="timeline-container-content">
                         <li>- Start our Discord(channel for your PR’s, personal trainer, workout music and much more!)✅</li>
                         <li>- Create a website✅</li>
-                        <li>- Assemble a great social media/marketing team</li>
+                        <li>- Prepare articles and newsletter</li>
+                        <li>- Assemble a great social media/marketing team✅</li>
                         <li>- Bring popular athletes on board</li>
                     </ul>
                 </div>
@@ -97,28 +98,25 @@ class Timeline extends React.Component {
                     </p><br/>
                     <ul className="timeline-container-content">
                         <li>- NFT project mint</li>
-                        <li>- $WHEY token launch</li>
-                        <li>- Launch main DAO</li>
-                        <li>- First DAO votings</li>
-                        <li>- Send first newsletter</li>
-                        <li>- Hire personal trainers at your disposal(each holder will be able to receive a training plan with an individual approach and advice)</li>
+                        <li>- Launch our governance token</li>
+                        <li>- Launch DAO</li>
+                        <li>- Hire personal trainers to be at your disposal</li>
                     </ul>
                 </div>
             </div>
             <div className="timeline-graphics desktop left"><h2 className="timeline-phase">Phase 3</h2><div className="timeline-img" id="store-img"></div></div>
             <div className="container right">
                 <div className="content">
-                    <h1 className="timeline-container-header">Merchandise & Awareness</h1>
+                    <h1 className="timeline-container-header">Awareness</h1>
                     <p className="timeline-container-date">Depends on community</p>
                     <p className="timeline-container-content">
                         This is when it all becomes a reality.
                     </p><br/>
                     <ul className="timeline-container-content">
-                        <li>- Mint and launch of Merchandise DAO</li>
-                        <li>- Votings regarding merchandise(manufacturer, type of products etc.)</li>
-                        <li>- Create chosen products(some of them sent to community)</li>
-                        <li>- Launch online store</li>
-                        <li>- Our stand at chosen big fitness events</li>
+                        <li>- Organize votings regarding merchandise</li>
+                        <li>- Create chosen products</li>
+                        <li>- Have a stand at chosen big fitness events</li>
+                        <li>- Advertise of our gym gamification plans</li>
                         <li>- Collaborate with top tier athletes</li>
                     </ul><br/>
                     <p className="timeline-container-caption">
@@ -133,13 +131,14 @@ class Timeline extends React.Component {
                     <p className="timeline-container-date">Hopefully Q2 2023</p>
                     <p className="timeline-container-content">
                         With money from merchandise and NFT mint we will be able to start building 
-                        our first gym governed by community!
+                        our gym and mobile app!
                     </p><br/>
                     <ul className="timeline-container-content">
                         <li>- Votings regarding: place, cost, style, contractor etc.</li>
-                        <li>- Hiring best devs to work on gamification</li>
+                        <li>- Hiring best devs to work on app</li>
                         <li>- Begin construction process</li>
                         <li>- Create smart equipment and make it autonomous</li>
+                        <li>- Launch a revolutionary app which track progress and rewards user with soulbound NFTs</li>
                         <li>- Welcome our first gym members!</li>
                     </ul><br/>
                     <p className="timeline-container-caption">
@@ -158,11 +157,10 @@ class Timeline extends React.Component {
                         <ul className="timeline-container-content">
                         <li>- Start organising our own BIG events</li>
                         <li>- Continue building our worldwide gym chain</li>
-                        <li>- Collaborate with well-known athletes and youtubers</li>
+                        <li>- Collaborate with well-known athletes & brands</li>
                         <li>- Expand our merchandise offer</li>
-                        <li>- Organise spontaneous trainings with founders all around the world</li>
-                        <li>- Continue building amazing community</li>
-                        <li>- Partner with well-known brands(Gymshark, Adidas, Nike...)</li>
+                        <li>- Sell smart equipment to other gyms to implement gamification</li>
+                        <li>- Improve our app and conquer the fitness world!</li>
                     </ul><br/>
                     </div><br/>
                 </div>
