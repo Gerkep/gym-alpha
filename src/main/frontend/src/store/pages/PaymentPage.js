@@ -15,13 +15,31 @@ const PaymentPage = (props) => {
         description: "Gym Alpha Merch",
         price: props.orderInfo.totalPrice
     }
+    const updateOrder = async () => {
+        const updatedOrder = {
+            "id": props.orderInfo.orderId,
+            "country": props.orderInfo.country,
+            "mail": props.orderInfo.email,
+            "firstName": props.orderInfo.firstName,
+            "lastName": props.orderInfo.lastName,
+            "telephoneNumber": props.orderInfo.telephone,
+            "streetAndNumber": props.orderInfo.streetAndNumber,
+            "postalCode": props.orderInfo.postalCode,
+            "city": props.orderInfo.city,
+            "items": props.orderInfo.cart,
+            "paid": true
+        }
+
+        props.orderPaid(true);
+        await store.post("/finalizeOrder", updatedOrder);
+    }
     const handleToken = async (token) => {
         console.log(token);
         await store.post("/stripe/payment/charge", "", { headers: {
           token: token.id,
           amount: 500,
         },}).then(() => {
-            props.orderPaid(true);
+            updateOrder()
            history.push("/store/thank-you")
            }).catch((error) => {
            alert(error);
@@ -54,7 +72,7 @@ const PaymentPage = (props) => {
                             description="Handled by Stripe." 
                             stripeKey="pk_test_51L90anDdmwDcjUrKGK935LoxR6popO2lxjsbPQ1Q0JNk9pkICAfmhZnmZetf1ggDJZ1efOT1WHlgBK62tK44iTPB00ttIu41jT" 
                             token={handleToken} 
-                            email={props.email}>
+                            email={props.orderInfo.email}>
                                 <button className="stripe-paybtn">Pay With Card</button>
                             </Stripe>
                         {/* <button>Ethereum</button> */}
@@ -66,6 +84,6 @@ const PaymentPage = (props) => {
         )
 }
 const mapStateToProps = (state) => {
-    return {email: state.email, orderInfo: state.orderInfo};
+    return {orderInfo: state.orderInfo};
 };
 export default connect(mapStateToProps, {orderPaid})(PaymentPage);

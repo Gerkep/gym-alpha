@@ -30,8 +30,10 @@ public class OrderController {
 
     @CrossOrigin
     @PostMapping(path = "/finalizeOrder", consumes = { MediaType.APPLICATION_JSON_VALUE })
-    public void addOrder(@RequestBody Order order) {
-        orderRepository.save(order);
+    public Long addOrder(@RequestBody Order order) {
+        Order newOrder = orderRepository.save(order);
+
+        return newOrder.getId();
     }
 
     @CrossOrigin

@@ -14,7 +14,8 @@ import {
     orderLastName, 
     orderTelephone, 
     orderStreetAndNumber,
-    orderPostalCode
+    orderPostalCode,
+    saveOrderId
 } 
 from "../../actions";
 import { connect } from "react-redux";
@@ -146,6 +147,7 @@ export default connect(mapStateToProps, {
     orderLastName, 
     orderTelephone, 
     orderStreetAndNumber,
-    orderPostalCode
+    orderPostalCode,
+    saveOrderId
 })
 (formWrapped);

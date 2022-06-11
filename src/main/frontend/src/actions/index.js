@@ -10,6 +10,12 @@ export const addToCart = (item) => {
         payload: item
     };
 };
+export const saveOrderId = (id) => {
+    return {
+        type: 'SAVE_ID',
+        payload: id
+    };
+};
 export const orderPaid = (isPaid) => {
     return {
         type: 'ORDER_PURCHASED',

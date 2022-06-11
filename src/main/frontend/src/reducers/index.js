@@ -3,6 +3,7 @@ import { reducer as formReducer } from 'redux-form';
 
 const initialState = {
     cart:[],
+    orderId: 0,
     firstName: '',
     lastName: '',
     telephone: '',
@@ -26,6 +27,11 @@ const orderReducer = (state = initialState, action) => {
                 return { 
                     ...state,
                     totalPrice: action.payload
+            }
+            case 'SAVE_ID' :
+                return { 
+                    ...state,
+                    orderId: action.payload
             }
             case 'ITEM_ADDED' :
                 return { 

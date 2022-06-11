@@ -3,13 +3,34 @@ import actions from "redux-form/lib/actions";
 import history from "../../history";
 import { orderPaid } from "../../actions";
 import { connect } from "react-redux";
+import store from "../../apis/store";
 
 const PaypalCheckoutButton = (props) => {
     const {product} = props;
 
     const handleApprove = (orderID) => {
         props.orderPaid(true);
+        updateOrder();
         history.push("thank-you")
+    }
+    const updateOrder = async () => {
+        console.log(props.orderInfo.orderId)
+        const updatedOrder = {
+            "id": props.orderInfo.orderId,
+            "country": props.orderInfo.country,
+            "mail": props.orderInfo.email,
+            "firstName": props.orderInfo.firstName,
+            "lastName": props.orderInfo.lastName,
+            "telephoneNumber": props.orderInfo.telephone,
+            "streetAndNumber": props.orderInfo.streetAndNumber,
+            "postalCode": props.orderInfo.postalCode,
+            "city": props.orderInfo.city,
+            "items": props.orderInfo.cart,
+            "paid": true
+        }
+
+        props.orderPaid(true);
+        await store.post("/finalizeOrder", updatedOrder);
     }
     return(
         <PayPalButtons
@@ -45,5 +66,7 @@ const PaypalCheckoutButton = (props) => {
         />
     )
 }
-
-export default connect(null, {orderPaid})(PaypalCheckoutButton);
+const mapStateToProps = (state) => {
+    return {orderInfo: state.orderInfo};
+};
+export default connect(mapStateToProps, {orderPaid})(PaypalCheckoutButton);
